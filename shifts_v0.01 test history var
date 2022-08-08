@@ -1,0 +1,125 @@
+import tkinter
+import customtkinter
+from tkinter import *
+
+
+customtkinter.set_appearance_mode("dark")  # Modes: "System" (standard), "Dark", "Light"
+customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
+
+app = customtkinter.CTk()
+app.geometry("400x580")
+app.title("Shifts creator")
+
+
+val = ""
+alyona = ""
+alex = ""
+ofir = ""
+yair = ""
+almog = ""
+pavel = ""
+ran = ""
+sahar = ""
+
+
+
+def button_callback():
+    global val
+    val = (" " + val + (optionmenu_1.get()) + " " + (combobox_1.get()) + " ")
+    print(val)
+
+    my_history_var.set(" "  + (optionmenu_1.get()) + " can not work on " + (combobox_1.get()) + " ")
+    label_2 = customtkinter.CTkLabel(master=frame_1, textvariable = my_history_var)
+    label_2.pack(pady=1, padx=1)
+
+
+
+def button_callback2():
+    global val
+    global alyona
+    if "Alyona Sun-Morning" in val:
+        alyona = alyona + "ABCD"
+    if "Alyona Mon-Morning" in val:
+        alyona = alyona + "ABCDG"
+    if "Alyona Tue-Morning" in val:
+        alyona = alyona + "ABGI"
+    if "Alyona Wed-Morning" in val:
+        alyona = alyona + "BEFI"
+    if "Alyona Thu-Morning" in val:
+        alyona = alyona + "EFH"
+    if "Alyona Fri-Morning " in val:
+        alyona = alyona + "EFH"
+    if "Alyona Sun-Night" in val:
+        alyona = alyona + "EFHI"
+    if "Alyona Mon-Night" in val:
+        alyona = alyona + "EFH"
+    if "Alyona Tue-Night" in val:
+        alyona = alyona + "CDH"
+    if "Alyona Wed-Night" in val:
+        alyona = alyona + "ACDG"
+    if "Alyona Thu-Night" in val:
+        alyona = alyona + "ABDGI"
+    if "Alyona Sat-Night " in val:
+        alyona = alyona + "CGI"
+        print("Sta-Night")
+
+    print(alyona)
+
+def button_clear():
+    global val
+    global alyona
+    alyona = ""
+    val = ""
+    label_5 = customtkinter.CTkLabel(master=frame_1, text=("You have clear all request"))
+    label_5.pack(pady=1, padx=1)
+    my_history_var.set(" ")
+
+
+frame_1 = customtkinter.CTkFrame(master=app)
+frame_1.pack(pady=60, padx=60, fill="both", expand=True)
+
+label_1 = customtkinter.CTkLabel(master=frame_1,text="Shifts Creator", justify=tkinter.LEFT)
+label_1.pack(pady=12, padx=10)
+
+
+
+
+
+my_history_var = StringVar()
+
+# set the text
+
+
+
+
+
+
+#entry_1 = customtkinter.CTkEntry(master=frame_1, placeholder_text="CTkEntry")
+#entry_1.pack(pady=12, padx=10)
+
+optionmenu_1 = customtkinter.CTkOptionMenu(frame_1, values=["Alyona", "Alex", "Ofir", "Yair", "Almog", "Pavel", "Ran", "Sahar"])
+optionmenu_1.pack(pady=12, padx=10)
+optionmenu_1.set("Alyona")
+
+combobox_1 = customtkinter.CTkComboBox(frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning","Wed-Morning","Thu-Morning","Fri-Morning","Sun-Night" ,"Mon-Night", "Tue-Night","Wed-Night", "Thu-Night", "Sat-Night"])
+combobox_1.pack(pady=12, padx=10)
+combobox_1.set("Sun-Morning")
+
+button_1 = customtkinter.CTkButton(master=frame_1,text="save", command=button_callback)
+button_1.pack(pady=12, padx=10)
+
+button_2 = customtkinter.CTkButton(master=frame_1,text="finished", command=button_callback2)
+button_2.pack(pady=12, padx=10)
+
+button_3 = customtkinter.CTkButton(master=frame_1,text="Clear all", command=button_clear)
+button_3.pack(pady=10, padx=8)
+
+
+
+label_3 = customtkinter.CTkLabel(master=frame_1, text="Shifts blocked:", justify=tkinter.LEFT)
+label_3.pack(pady=5, padx=3)
+
+
+
+
+app.mainloop()
