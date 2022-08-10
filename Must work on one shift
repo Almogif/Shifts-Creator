@@ -1,0 +1,330 @@
+    # must work on A (just one can work this shift)
+    if (("A" in alyona) and ("A" in alex) and ("A" in ofir) and ("A" in yair) and ("A" in almog) and ("A" in pavel) and (
+            "A" in sahar) and (not "A" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in alex) and ("A" in ofir) and ("A" in yair) and ("A" in almog) and ("A" in pavel) and (
+            "A" in ran) and (not "A" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in alex) and ("A" in ofir) and ("A" in yair) and ("A" in almog) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in alex) and ("A" in ofir) and ("A" in yair) and ("A" in pavel) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in alex) and ("A" in ofir) and ("A" in almog) and ("A" in pavel) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in alex) and ("A" in yair) and ("A" in almog) and ("A" in pavel) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirA"
+        print("hey")
+    elif (("A" in alyona) and ("A" in ofir) and ("A" in yair) and ("A" in almog) and ("A" in pavel) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexA"
+        print("hey")
+    elif (("A" in alex) and ("A" in ofir) and ("A" in yair) and ("A" in almog) and ("A" in pavel) and ("A" in sahar) and (
+            "A" in ran) and (not "A" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaA"
+        print("hey")
+    # must work on B (just one can work this shift)
+    if (("B" in alyona) and ("B" in alex) and ("B" in ofir) and ("B" in yair) and ("B" in almog) and ("B" in pavel) and (
+            "B" in sahar) and (not "B" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in alex) and ("B" in ofir) and ("B" in yair) and ("B" in almog) and ("B" in pavel) and (
+            "B" in ran) and (not "B" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in alex) and ("B" in ofir) and ("B" in yair) and ("B" in almog) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in alex) and ("B" in ofir) and ("B" in yair) and ("B" in pavel) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in alex) and ("B" in ofir) and ("B" in almog) and ("B" in pavel) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in alex) and ("B" in yair) and ("B" in almog) and ("B" in pavel) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirB"
+        print("hey")
+    elif (("B" in alyona) and ("B" in ofir) and ("B" in yair) and ("B" in almog) and ("B" in pavel) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexB"
+        print("hey")
+    elif (("B" in alex) and ("B" in ofir) and ("B" in yair) and ("B" in almog) and ("B" in pavel) and ("B" in sahar) and (
+            "B" in ran) and (not "B" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaB"
+        print("hey")
+    # must work on C (just one can work this shift)
+    if (("C" in alyona) and ("C" in alex) and ("C" in ofir) and ("C" in yair) and ("C" in almog) and ("C" in pavel) and (
+            "C" in sahar) and (not "C" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in alex) and ("C" in ofir) and ("C" in yair) and ("C" in almog) and ("C" in pavel) and (
+            "C" in ran) and (not "C" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in alex) and ("C" in ofir) and ("C" in yair) and ("C" in almog) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in alex) and ("C" in ofir) and ("C" in yair) and ("C" in pavel) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in alex) and ("C" in ofir) and ("C" in almog) and ("C" in pavel) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in alex) and ("C" in yair) and ("C" in almog) and ("C" in pavel) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirC"
+        print("hey")
+    elif (("C" in alyona) and ("C" in ofir) and ("C" in yair) and ("C" in almog) and ("C" in pavel) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexC"
+        print("hey")
+    elif (("C" in alex) and ("C" in ofir) and ("C" in yair) and ("C" in almog) and ("C" in pavel) and ("C" in sahar) and (
+            "C" in ran) and (not "C" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaC"
+        print("hey")
+    # must work on D (just one can work this shift)
+    if (("D" in alyona) and ("D" in alex) and ("D" in ofir) and ("D" in yair) and ("D" in almog) and ("D" in pavel) and (
+            "D" in sahar) and (not "D" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in alex) and ("D" in ofir) and ("D" in yair) and ("D" in almog) and ("D" in pavel) and (
+            "D" in ran) and (not "D" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in alex) and ("D" in ofir) and ("D" in yair) and ("D" in almog) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in alex) and ("D" in ofir) and ("D" in yair) and ("D" in pavel) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in alex) and ("D" in ofir) and ("D" in almog) and ("D" in pavel) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in alex) and ("D" in yair) and ("D" in almog) and ("D" in pavel) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirD"
+        print("hey")
+    elif (("D" in alyona) and ("D" in ofir) and ("D" in yair) and ("D" in almog) and ("D" in pavel) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexD"
+        print("hey")
+    elif (("D" in alex) and ("D" in ofir) and ("D" in yair) and ("D" in almog) and ("D" in pavel) and ("D" in sahar) and (
+            "D" in ran) and (not "D" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaD"
+        print("hey")
+    # must work on E (just one can work this shift)
+    if (("E" in alyona) and ("E" in alex) and ("E" in ofir) and ("E" in yair) and ("E" in almog) and ("E" in pavel) and (
+            "E" in sahar) and (not "E" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in alex) and ("E" in ofir) and ("E" in yair) and ("E" in almog) and ("E" in pavel) and (
+            "E" in ran) and (not "E" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in alex) and ("E" in ofir) and ("E" in yair) and ("E" in almog) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in alex) and ("E" in ofir) and ("E" in yair) and ("E" in pavel) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in alex) and ("E" in ofir) and ("E" in almog) and ("E" in pavel) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in alex) and ("E" in yair) and ("E" in almog) and ("E" in pavel) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirE"
+        print("hey")
+    elif (("E" in alyona) and ("E" in ofir) and ("E" in yair) and ("E" in almog) and ("E" in pavel) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexE"
+        print("hey")
+    elif (("E" in alex) and ("E" in ofir) and ("E" in yair) and ("E" in almog) and ("E" in pavel) and ("E" in sahar) and (
+            "E" in ran) and (not "E" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaE"
+        print("hey")
+    # must work on F (just one can work this shift)
+    if (("F" in alyona) and ("F" in alex) and ("F" in ofir) and ("F" in yair) and ("F" in almog) and ("F" in pavel) and (
+            "F" in sahar) and (not "F" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in alex) and ("F" in ofir) and ("F" in yair) and ("F" in almog) and ("F" in pavel) and (
+            "F" in ran) and (not "F" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in alex) and ("F" in ofir) and ("F" in yair) and ("F" in almog) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in alex) and ("F" in ofir) and ("F" in yair) and ("F" in pavel) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in alex) and ("F" in ofir) and ("F" in almog) and ("F" in pavel) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in alex) and ("F" in yair) and ("F" in almog) and ("F" in pavel) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirF"
+        print("hey")
+    elif (("F" in alyona) and ("F" in ofir) and ("F" in yair) and ("F" in almog) and ("F" in pavel) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexF"
+        print("hey")
+    elif (("F" in alex) and ("F" in ofir) and ("F" in yair) and ("F" in almog) and ("F" in pavel) and ("F" in sahar) and (
+            "F" in ran) and (not "F" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaF"
+        print("hey")
+    # must work on G (just one can work this shift)
+    if (("G" in alyona) and ("G" in alex) and ("G" in ofir) and ("G" in yair) and ("G" in almog) and ("G" in pavel) and (
+            "G" in sahar) and (not "G" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in alex) and ("G" in ofir) and ("G" in yair) and ("G" in almog) and ("G" in pavel) and (
+            "G" in ran) and (not "G" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in alex) and ("G" in ofir) and ("G" in yair) and ("G" in almog) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in alex) and ("G" in ofir) and ("G" in yair) and ("G" in pavel) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in alex) and ("G" in ofir) and ("G" in almog) and ("G" in pavel) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in alex) and ("G" in yair) and ("G" in almog) and ("G" in pavel) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirG"
+        print("hey")
+    elif (("G" in alyona) and ("G" in ofir) and ("G" in yair) and ("G" in almog) and ("G" in pavel) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexG"
+        print("hey")
+    elif (("G" in alex) and ("G" in ofir) and ("G" in yair) and ("G" in almog) and ("G" in pavel) and ("G" in sahar) and (
+            "G" in ran) and (not "G" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaG"
+        print("hey")
+    # must work on H (just one can work this shift)
+    if (("H" in alyona) and ("H" in alex) and ("H" in ofir) and ("H" in yair) and ("H" in almog) and ("H" in pavel) and (
+            "H" in sahar) and (not "H" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in alex) and ("H" in ofir) and ("H" in yair) and ("H" in almog) and ("H" in pavel) and (
+            "H" in ran) and (not "H" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in alex) and ("H" in ofir) and ("H" in yair) and ("H" in almog) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in alex) and ("H" in ofir) and ("H" in yair) and ("H" in pavel) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in alex) and ("H" in ofir) and ("H" in almog) and ("H" in pavel) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in alex) and ("H" in yair) and ("H" in almog) and ("H" in pavel) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirH"
+        print("hey")
+    elif (("H" in alyona) and ("H" in ofir) and ("H" in yair) and ("H" in almog) and ("H" in pavel) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexH"
+        print("hey")
+    elif (("H" in alex) and ("H" in ofir) and ("H" in yair) and ("H" in almog) and ("H" in pavel) and ("H" in sahar) and (
+            "H" in ran) and (not "H" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaH"
+        print("hey")
+    # must work on I (just one can work this shift)
+    if (("I" in alyona) and ("I" in alex) and ("I" in ofir) and ("I" in yair) and ("I" in almog) and ("I" in pavel) and (
+            "I" in sahar) and (not "I" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in alex) and ("I" in ofir) and ("I" in yair) and ("I" in almog) and ("I" in pavel) and (
+            "I" in ran) and (not "I" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in alex) and ("I" in ofir) and ("I" in yair) and ("I" in almog) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in alex) and ("I" in ofir) and ("I" in yair) and ("I" in pavel) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in alex) and ("I" in ofir) and ("I" in almog) and ("I" in pavel) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in alex) and ("I" in yair) and ("I" in almog) and ("I" in pavel) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirI"
+        print("hey")
+    elif (("I" in alyona) and ("I" in ofir) and ("I" in yair) and ("I" in almog) and ("I" in pavel) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexI"
+        print("hey")
+    elif (("I" in alex) and ("I" in ofir) and ("I" in yair) and ("I" in almog) and ("I" in pavel) and ("I" in sahar) and (
+            "I" in ran) and (not "I" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaI"
+        print("hey")
+    # must work on J (just one can work this shift)
+    if (("J" in alyona) and ("J" in alex) and ("J" in ofir) and ("J" in yair) and ("J" in almog) and ("J" in pavel) and (
+            "J" in sahar) and (not "J" in ran) and (not "ran" in shifts)):
+        shifts = shifts + "ranJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in alex) and ("J" in ofir) and ("J" in yair) and ("J" in almog) and ("J" in pavel) and (
+            "J" in ran) and (not "J" in sahar)and (not "sahar" in shifts)):
+        shifts = shifts + "saharJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in alex) and ("J" in ofir) and ("J" in yair) and ("J" in almog) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in pavel) and (not "pavel" in shifts)):
+        shifts = shifts + "pavelJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in alex) and ("J" in ofir) and ("J" in yair) and ("J" in pavel) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in almog) and (not "almog" in shifts)):
+        shifts = shifts + "almogJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in alex) and ("J" in ofir) and ("J" in almog) and ("J" in pavel) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in yair) and (not "yair" in shifts)):
+        shifts = shifts + "yairJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in alex) and ("J" in yair) and ("J" in almog) and ("J" in pavel) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in ofir) and (not "ofir" in shifts)):
+        shifts = shifts + "ofirJ"
+        print("hey")
+    elif (("J" in alyona) and ("J" in ofir) and ("J" in yair) and ("J" in almog) and ("J" in pavel) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in alex) and (not "alex" in shifts)):
+        shifts = shifts + "alexJ"
+        print("hey")
+    elif (("J" in alex) and ("J" in ofir) and ("J" in yair) and ("J" in almog) and ("J" in pavel) and ("J" in sahar) and (
+            "J" in ran) and (not "J" in alyona) and (not "alyona" in shifts)):
+        shifts = shifts + "alyonaJ"
+        print("hey")
