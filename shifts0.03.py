@@ -19,7 +19,7 @@ pavel = ""
 ran = ""
 sahar = ""
 shifts = "shifts: "
-
+i = 0
 
 def button_callback():
     global val
@@ -40,6 +40,19 @@ def button_callback2():
     global pavel
     global ran
     global sahar
+    global RandomA
+    global RandomB
+    global RandomC
+    global RandomD
+    global RandomE
+    global RandomF
+    global RandomG
+    global RandomH
+    global RandomI
+    global RandomJ
+
+
+
 
     global shifts
     # Alyona check
@@ -243,57 +256,8 @@ def button_callback2():
         sahar = sahar + "ABDGI"
     if "Sahar Sat-Night " in val:
         sahar = sahar + "CGI"
-# Cannot work any other shifts alyona:
 
-    if (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and (
-            "F" in alyona) and (
-            "G" in alyona) and ("H" in alyona) and (not "I" in alyona) and (not "I" in shifts)):
-        print("alyona must work I")
-        shifts = shifts + "AlyonaI"
-    elif (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and (
-            "F" in alyona) and (
-                  "G" in alyona) and ("I" in alyona) and (not "H" in alyona) and (not "H" in shifts)):
-        print("alyona must work H")
-        shifts = shifts + "AlyonaH"
-    elif (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and (
-            "F" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "G" in alyona) and (not "G" in shifts)):
-        print("alyona must work G")
-        shifts = shifts + "AlyonaG"
-    elif (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "F" in alyona) and (not "F" in shifts)):
-        print("alyona must work F")
-        shifts = shifts + "AlyonaF"
-    elif (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("F" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "E" in alyona) and (not "E" in shifts)):
-        print("alyona must work E")
-        shifts = shifts + "AlyonaE"
-    elif (("A" in alyona) and ("B" in alyona) and ("C" in alyona) and ("E" in alyona) and ("F" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "D" in alyona) and (not "D" in shifts)):
-        print("alyona must work D")
-        shifts = shifts + "AlyonaD"
-    elif (("A" in alyona) and ("B" in alyona) and ("D" in alyona) and ("E" in alyona) and ("F" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "C" in alyona) and (not "C" in shifts)):
-        print("alyona must work C")
-        shifts = shifts + "AlyonaC"
-    elif (("A" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and ("F" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "B" in alyona) and (not "B" in shifts)):
-        print("alyona must work B")
-        shifts = shifts + "AlyonaB"
-    elif (("B" in alyona) and ("C" in alyona) and ("D" in alyona) and ("E" in alyona) and ("F" in alyona) and (
-            "G" in alyona) and (
-                  "H" in alyona) and ("I" in alyona) and (not "A" in alyona) and (not "A" in shifts)):
-        print("alyona must work A")
-        shifts = shifts + "AlyonaA"
-
-
-    #lets A
-    x = 1
+    #shfits lists
     A = ""
     B = ""
     C = ""
@@ -308,288 +272,320 @@ def button_callback2():
     for x in range(0, 8):
         if x == 0:
             if not "A" in alyona:
-                A = A + " Alyona"
+                A = A + "alyona "
         elif x == 1:
             if not "A" in alex:
-                A = A + " Alex"
+                A = A + "alex "
         elif x == 2:
             if not "A" in ofir:
-                A = A + " Ofir"
+                A = A + "ofir "
         elif x == 3:
             if not "A" in yair:
-                A = A + " Yair"
+                A = A + "yair "
         elif x == 4:
             if not "A" in almog:
-                A = A + " Almog"
+                A = A + "almog "
         elif x == 5:
             if not "A" in pavel:
-                A = A + " Pavel"
+                A = A + "pavel "
         elif x == 6:
             if not "A" in sahar:
-                A = A + " Sahar"
+                A = A + "sahar "
         elif x == 7:
             if not "A" in ran:
-                A = A + " Ran"
+                A = A + "ran "
         if x == 0:
             if not "B" in alyona:
-                B = B + " alyona"
+                B = B + "alyona "
         elif x == 1:
             if not "B" in alex:
-                B = B + " alex"
+                B = B + "alex "
         elif x == 2:
             if not "B" in ofir:
-                B = B + " ofir"
+                B = B + "ofir "
         elif x == 3:
             if not "B" in yair:
-                B = B + " yair"
+                B = B + "yair "
         elif x == 4:
             if not "B" in almog:
-                B = B + " almog"
+                B = B + "almog "
         elif x == 5:
             if not "B" in pavel:
-                B = B + " pavel"
+                B = B + "pavel "
         elif x == 6:
             if not "B" in sahar:
-                B = B + " sahar"
+                B = B + "sahar "
         elif x == 7:
             if not "B" in ran:
-                B = B + " ran"
+                B = B + "ran "
         if x == 0:
             if not "C" in alyona:
-                C = C + " alyona"
+                C = C + "alyona "
         elif x == 1:
             if not "C" in alex:
-                C = C + " alex"
+                C = C + "alex "
         elif x == 2:
             if not "C" in ofir:
-                C = C + " ofir"
+                C = C + "ofir "
         elif x == 3:
             if not "C" in yair:
-                C = C + " yair"
+                C = C + "yair "
         elif x == 4:
             if not "C" in almog:
-                C = C + " almog"
+                C = C + "almog "
         elif x == 5:
             if not "C" in pavel:
-                C = C + " pavel"
+                C = C + "pavel "
         elif x == 6:
             if not "C" in sahar:
-                C = C + " sahar"
+                C = C + "sahar "
         elif x == 7:
             if not "C" in ran:
-                C = C + " ran"
+                C = C + "ran "
         if x == 0:
             if not "D" in alyona:
-                D = D + " alyona"
+                D = D + "alyona "
         elif x == 1:
             if not "D" in alex:
-                D = D + " alex"
+                D = D + "alex "
         elif x == 2:
             if not "D" in ofir:
-                D = D + " ofir"
+                D = D + "ofir "
         elif x == 3:
             if not "D" in yair:
-                D = D + " yair"
+                D = D + "yair "
         elif x == 4:
             if not "D" in almog:
-                D = D + " almog"
+                D = D + "almog "
         elif x == 5:
             if not "D" in pavel:
-                D = D + " pavel"
+                D = D + "pavel "
         elif x == 6:
             if not "D" in sahar:
-                D = D + " sahar"
+                D = D + "sahar "
         elif x == 7:
             if not "D" in ran:
-                D = D + " ran"
+                D = D + "ran "
         if x == 0:
             if not "E" in alyona:
-                E = E + " alyona"
+                E = E + "alyona "
         elif x == 1:
             if not "E" in alex:
-                E = E + " alex"
+                E = E + "alex "
         elif x == 2:
             if not "E" in ofir:
-                E = E + " ofir"
+                E = E + "ofir "
         elif x == 3:
             if not "E" in yair:
-                E = E + " yair"
+                E = E + "yair "
         elif x == 4:
             if not "E" in almog:
-                E = E + " almog"
+                E = E + "almog "
         elif x == 5:
             if not "E" in pavel:
-                E = E + " pavel"
+                E = E + "pavel "
         elif x == 6:
             if not "E" in sahar:
-                E = E + " sahar"
+                E = E + "sahar "
         elif x == 7:
             if not "E" in ran:
-                E = E + " ran"
+                E = E + "ran "
         if x == 0:
             if not "F" in alyona:
-                F = F + " alyona"
+                F = F + "alyona "
         elif x == 1:
             if not "F" in alex:
-                F = F + " alex"
+                F = F + "alex "
         elif x == 2:
             if not "F" in ofir:
-                F = F + " ofir"
+                F = F + "ofir "
         elif x == 3:
             if not "F" in yair:
-                F = F + " yair"
+                F = F + "yair "
         elif x == 4:
             if not "F" in almog:
-                F = F + " almog"
+                F = F + "almog "
         elif x == 5:
             if not "F" in pavel:
-                F = F + " pavel"
+                F = F + "pavel "
         elif x == 6:
             if not "F" in sahar:
-                F = F + " sahar"
+                F = F + "sahar "
         elif x == 7:
             if not "F" in ran:
-                F = F + " ran"
+                F = F + "ran "
         if x == 0:
             if not "G" in alyona:
-                G = G + " alyona"
+                G = G + "alyona "
         elif x == 1:
             if not "G" in alex:
-                G = G + " alex"
+                G = G + "alex "
         elif x == 2:
             if not "G" in ofir:
-                G = G + " ofir"
+                G = G + "ofir "
         elif x == 3:
             if not "G" in yair:
-                G = G + " yair"
+                G = G + "yair "
         elif x == 4:
             if not "G" in almog:
-                G = G + " almog"
+                G = G + "almog "
         elif x == 5:
             if not "G" in pavel:
-                G = G + " pavel"
+                G = G + "pavel "
         elif x == 6:
             if not "G" in sahar:
-                G = G + " sahar"
+                G = G + "sahar "
         elif x == 7:
             if not "G" in ran:
-                G = G + " ran"
+                G = G + "ran "
         if x == 0:
             if not "H" in alyona:
-                H = H + " alyona"
+                H = H + "alyona "
         elif x == 1:
             if not "H" in alex:
-                H = H + " alex"
+                H = H + "alex "
         elif x == 2:
             if not "H" in ofir:
-                H = H + " ofir"
+                H = H + "ofir "
         elif x == 3:
             if not "H" in yair:
-                H = H + " yair"
+                H = H + "yair "
         elif x == 4:
             if not "H" in almog:
-                H = H + " almog"
+                H = H + "almog "
         elif x == 5:
             if not "H" in pavel:
-                H = H + " pavel"
+                H = H + "pavel "
         elif x == 6:
             if not "H" in sahar:
-                H = H + " sahar"
+                H = H + "sahar "
         elif x == 7:
             if not "H" in ran:
-                H = H + " ran"
+                H = H + "ran "
         if x == 0:
             if not "I" in alyona:
-                I = I + " alyona"
+                I = I + "alyona "
         elif x == 1:
             if not "I" in alex:
-                I = I + " alex"
+                I = I + "alex "
         elif x == 2:
             if not "I" in ofir:
-                I = I + " ofir"
+                I = I + "ofir "
         elif x == 3:
             if not "I" in yair:
-                I = I + " yair"
+                I = I + "yair "
         elif x == 4:
             if not "I" in almog:
-                I = I + " almog"
+                I = I + "almog "
         elif x == 5:
             if not "I" in pavel:
-                I = I + " pavel"
+                I = I + "pavel "
         elif x == 6:
             if not "I" in sahar:
-                I = I + " sahar"
+                I = I + "sahar "
         elif x == 7:
             if not "I" in ran:
-                I = I + " ran"
+                I = I + "ran "
         if x == 0:
             if not "J" in alyona:
-                J = J + " alyona"
+                J = J + "alyona "
         elif x == 1:
             if not "J" in alex:
-                J = J + " alex"
+                J = J + "alex "
         elif x == 2:
             if not "J" in ofir:
-                J = J + " ofir"
+                J = J + "ofir "
         elif x == 3:
             if not "J" in yair:
-                J = J + " yair"
+                J = J + "yair "
         elif x == 4:
             if not "J" in almog:
-                J = J + " almog"
+                J = J + "almog "
         elif x == 5:
             if not "J" in pavel:
-                J = J + " pavel"
+                J = J + "pavel "
         elif x == 6:
             if not "J" in sahar:
-                J = J + " sahar"
+                J = J + "sahar "
         elif x == 7:
             if not "J" in ran:
-                J = J + " ran"
+                J = J + "ran "
 
-        #who
+        #Convert to list
 
     A = A.split(" ")
-    shifts = (shifts + " A:" + random.choice(A))
-
-    B = B.split(" ")
-    shifts = (shifts + " B:" + random.choice(B))
-
+    A.pop()
+    B = B.split()
+    B.pop()
     C = C.split(" ")
-    shifts = (shifts + " C:" + random.choice(C))
-
+    C.pop()
     D = D.split(" ")
-    shifts = (shifts + " D:" + random.choice(D))
-
+    D.pop()
     E = E.split(" ")
-    shifts = (shifts + " E:" + random.choice(E))
-
+    E.pop()
     F = F.split(" ")
-    shifts = (shifts + " F:" + random.choice(F))
-
+    F.pop()
     G = G.split(" ")
-    shifts = (shifts + " G:" + random.choice(G))
-
+    G.pop()
+    H = H.split(" ")
+    H.pop()
     I = I.split(" ")
-    shifts = (shifts + " I:" + random.choice(I))
+    I.pop()
+    J = J.split(" ")
+    J.pop()
 
 
-    # print("A:", A , "B:", B, "C:",C, "D:", D, "E:", E, "F:", F, "G:", G, "G:", H, "H:", I, "I: ")
+    for x in range(0, 999999):
+        RandomA = random.choice(A)
+        RandomB = random.choice(B)
+        RandomC = random.choice(C)
+        RandomD = random.choice(D)
+        RandomE = random.choice(E)
+        RandomF = random.choice(F)
+        RandomG = random.choice(G)
+        RandomH = random.choice(H)
+        RandomI = random.choice(I)
+        RandomJ = random.choice(J)
+        if not (RandomA == RandomB == RandomC == RandomD == RandomE == RandomF == RandomG == RandomH):
+            print("yes")
+            break
+
+
+    shifts = (shifts + " A:" + RandomA)
+    shifts = (shifts + " B:" + RandomB)
+    shifts = (shifts + " C:" + RandomC)
+    shifts = (shifts + " D:" + RandomD)
+    shifts = (shifts + " E:" + RandomE)
+    shifts = (shifts + " F:" + RandomF)
+    shifts = (shifts + " G:" + RandomG)
+    shifts = (shifts + " H:" + RandomH)
+    shifts = (shifts + " I:" + RandomI)
+    shifts = (shifts + " J:" + RandomJ)
+    #shifts = (shifts + " I:" + random.choice(I))
+    #shifts = (shifts + " J:" + random.choice(J))
 
 
 
 
+    print("A:", A , "B:", B, "C:",C, "D:", D, "E:", E, "F:", F, "G:", G, "H:", H, "I:", I, "J: ", J)
 
-
-    print(sahar, ran, alyona, almog, pavel, alex, ofir, yair)
+    print("alyona " + alyona)
+    print("alex " + alex)
+    print("ofir " + ofir)
+    print("yair " + yair)
+    print("almog " + almog)
+    print("pavel " + pavel)
+    print("ran " + ran)
+    print("sahar " + ran)
     print(shifts)
 
 
 def button_clear():
     global val
-    global alyona
-    alyona = ""
+    global shifts
     val = ""
+    shifts = ""
+
     label_5 = customtkinter.CTkLabel(master=frame_1, text=("You have clear all request"))
     label_5.pack(pady=1, padx=1)
 
