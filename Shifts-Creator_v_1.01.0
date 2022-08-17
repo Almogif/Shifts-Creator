@@ -57,6 +57,23 @@ pavel = ""
 ran = ""
 sahar = ""
 hello = ""
+alyona_st = 0
+alyona_fr = 0
+alex_st = 0
+alex_fr = 0
+ofir_st = 0
+ofir_fr = 0
+yair_st = 0
+yair_fr = 0
+almog_st = 0
+almog_fr = 0
+ran_st = 0
+ran_fr = 0
+sahar_st = 0
+sahar_fr = 0
+pavel_st = 0
+pavel_fr = 0
+
 
 shifts = "shifts: "
 i = 0
@@ -571,7 +588,9 @@ def button_callback2():
     I.pop()
     J = J.split(" ")
     J.pop()
-
+    # hello = "A B C D E F G H I J"
+    # hello = hello.split(" ")
+    print(hello)
     for x in range(0, 9999):
         hello = ""
         s = 0
@@ -928,77 +947,76 @@ def his():
 
 
 
-alyona_st = 0
-alyona_fr = 0
-alex_st = 0
-alex_fr = 0
-ofir_st = 0
-ofir_fr = 0
-yair_st = 0
-yair_fr = 0
-almog_st = 0
-almog_fr = 0
-ran_st = 0
-ran_fr = 0
-sahar_st = 0
-sahar_fr = 0
-pavel_st = 0
-pavel_fr = 0
+
+def gettingdata():
+    sheets_list = wb2.sheetnames
+    # range (i, j) and if j < 30 delete first item
+    print(sheets_list)
+    global alyona_st
+    global alyona_fr
+    global alex_st
+    global alex_fr
+    global ofir_st
+    global ofir_fr
+    global yair_st
+    global yair_fr
+    global almog_st
+    global almog_fr
+    global ran_st
+    global ran_fr
+    global sahar_st
+    global sahar_fr
+    global pavel_st
+    global pavel_fr
+
+    for i in range(0, 9):
+        if 0 <= i < len(sheets_list):
+            df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
+            st = (df['SaturDay'])
+            fr = (df['FriDay'])
+            if 'alyona' in st.values:
+                alyona_st = alyona_st + 1
+            if 'alyona' in fr.values:
+                alyona_fr = alyona_st + 1
+            if 'alex' in st.values:
+                alex_st = alex_st + 1
+            if 'alex' in fr.values:
+                alex_fr = alex_st + 1
+            if 'ofir' in st.values:
+                ofir_st = ofir_st + 1
+            if 'ofir' in fr.values:
+                ofir_fr = ofir_st + 1
+            if 'yair' in st.values:
+                yair_st = yair_st + 1
+            if 'yair' in fr.values:
+                yair_fr = yair_st + 1
+            if 'almog' in st.values:
+                almog_st = almog_st + 1
+            if 'almog' in fr.values:
+                almog_fr = almog_st + 1
+            if 'ran' in st.values:
+                ran_st = ran_st + 1
+            if 'ran' in fr.values:
+                ran_fr = ran_st + 1
+            if 'sahar' in st.values:
+                sahar_st = sahar_st + 1
+            if 'sahar' in fr.values:
+                sahar_fr = sahar_st + 1
+            if 'pavel' in st.values:
+                pavel_st = pavel_st + 1
+            if 'pavel' in fr.values:
+                pavel_fr = pavel_st + 1
 
 
-sheets_list = wb2.sheetnames
-# range (i, j) and if j < 30 delete first item
-print(sheets_list)
-for i in range(0, 9):
-    if 0 <= i < len(sheets_list):
-        df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
-        st = (df['SaturDay'])
-        fr = (df['FriDay'])
-        if 'alyona' in st.values:
-            alyona_st = alyona_st + 1
-        if 'alyona' in fr.values:
-            alyona_fr = alyona_st + 1
-        if 'alex' in st.values:
-            alex_st = alex_st + 1
-        if 'alex' in fr.values:
-            alex_fr = alex_st + 1
-        if 'ofir' in st.values:
-            ofir_st = ofir_st + 1
-        if 'ofir' in fr.values:
-            ofir_fr = ofir_st + 1
-        if 'yair' in st.values:
-            yair_st = yair_st + 1
-        if 'yair' in fr.values:
-            yair_fr = yair_st + 1
-        if 'almog' in st.values:
-            almog_st = almog_st + 1
-        if 'almog' in fr.values:
-            almog_fr = almog_st + 1
-        if 'ran' in st.values:
-            ran_st = ran_st + 1
-        if 'ran' in fr.values:
-            ran_fr = ran_st + 1
-        if 'sahar' in st.values:
-            sahar_st = sahar_st + 1
-        if 'sahar' in fr.values:
-            sahar_fr = sahar_st + 1
-        if 'pavel' in st.values:
-            pavel_st = pavel_st + 1
-        if 'pavel' in fr.values:
-            pavel_fr = pavel_st + 1
-
-
-print(alyona_st, alyona_fr)
-print(pavel_st, pavel_fr)
-print(ran_st, ran_fr)
-print(alex_st, alex_fr)
-print(almog_st, almog_fr)
+    print(alyona_st, alyona_fr)
+    print(pavel_st, pavel_fr)
+    print(ran_st, ran_fr)
+    print(alex_st, alex_fr)
+    print(almog_st, almog_fr)
 
 
 
-def getting_the_data():
-    for i in range(0, 999):
-        print()
+
 
 
 
