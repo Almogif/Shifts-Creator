@@ -308,6 +308,22 @@ def button_callback2():
     global val
     global hello
     global s
+    global alyona_st
+    global alyona_fr
+    global alex_st
+    global alex_fr
+    global ofir_st
+    global ofir_fr
+    global yair_st
+    global yair_fr
+    global almog_st
+    global almog_fr
+    global ran_st
+    global ran_fr
+    global sahar_st
+    global sahar_fr
+    global pavel_st
+    global pavel_fr
 
     # after get from input which shifts each ops can not work, transform the data to format 'X = (can not work) ABC..'
     check()
@@ -588,63 +604,63 @@ def button_callback2():
     I.pop()
     J = J.split(" ")
     J.pop()
-    # hello = "A B C D E F G H I J"
-    # hello = hello.split(" ")
+    hello = "A B C D E F G H I J" #creat string
+    hello = hello.split(" ") #list
     print(hello)
+    gettingdata()
+    st = [alyona_st, almog_st, sahar_st, pavel_st, ran_st, ofir_st, yair_st, alex_st]
+    print(st)
     for x in range(0, 9999):
-        hello = ""
         s = 0
-        if A:
-            hello = hello + " " + random.choice(A)
-        else:
-            hello = hello + " " + "A"
-            s = s + 1
-        if B:
-            hello = hello + " " + random.choice(B)
-        else:
-            hello = hello + " " + "B"
-            s = s + 1
         if C:
-            hello = hello + " " + random.choice(C)
+            hello[2] = (random.choice(C))
         else:
-            hello = hello + " " + "C"
-            s = s + 1
-        if D:
-            hello = hello + " " + random.choice(D)
-        else:
-            hello = hello + " " + "D"
-            s = s + 1
-        if E:
-            hello = hello + " " + random.choice(E)
-        else:
-            hello = hello + " " + "E"
-            s = s + 1
-        if F:
-            hello = hello + " " + random.choice(F)
-        else:
-            hello = hello + " " + "F"
+            hello[2] = ("C")
             s = s + 1
         if G:
-            hello = hello + " " + random.choice(G)
+            hello[6] = (random.choice(G))
         else:
-            hello = hello + " " + "G"
+            hello[6] = ("G")
+            s = s + 1
+        if E:
+            hello[4] = (random.choice(E))
+        else:
+            hello[4] = ("E")
+            s = s + 1
+        if F:
+            hello[5] = (random.choice(F))
+        else:
+            hello[5] = ("F")
             s = s + 1
         if H:
-            hello = hello + " " + random.choice(H)
+            hello[7] = (random.choice(H))
         else:
-            hello = hello + " " + "H"
+            hello[7] = ("H")
+        if A:
+            hello[0] = (random.choice(A))
+        else:
+            hello[0] = ("A")
+            s = s + 1
+        if B:
+            hello[1] = (random.choice(B))
+        else:
+            hello[1] = ("B")
+            s = s + 1
+        if D:
+            hello[3] = (random.choice(D))
+        else:
+            hello[3] = ("D")
+            s = s + 1
         if ((I) and (s > 0)):
-            hello = hello + " " + random.choice(I)
+            hello[8] = (random.choice(I))
         else:
-            hello = hello + " " + "I"
+            hello[8] = ("I")
             s = s + 1
         if ((J) and (s > 1)):
-            hello = hello + " " + random.choice(J)
+            hello[9] = (random.choice(I))
         else:
-            hello = hello + " " + "J"
+            hello[9] = ("J")
 
-        hello = hello.split(" ")
-        hello.pop(0)  # last str remove
         if (hello.count('alyona') == 1) and (hello.count('alex') == 1) and (
                 hello.count('ofir') == 1) and (hello.count('yair') == 1) and (hello.count('almog') == 1) and (
                 hello.count('pavel') == 1) and (hello.count('ran') == 1) and (hello.count('sahar') == 1):
