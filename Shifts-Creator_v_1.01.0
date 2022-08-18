@@ -7,6 +7,8 @@ from openpyxl.styles import NamedStyle, Font, Border, Side
 from openpyxl import load_workbook
 import pandas as pd
 import os
+import array as arr
+
 
 highlight = NamedStyle(name="highlight")
 bd = Side(style='thin', color="000000")
@@ -57,6 +59,9 @@ pavel = ""
 ran = ""
 sahar = ""
 hello = ""
+maxst = ""
+maxfr = ""
+shifts = ""
 alyona_st = 0
 alyona_fr = 0
 alex_st = 0
@@ -308,22 +313,6 @@ def button_callback2():
     global val
     global hello
     global s
-    global alyona_st
-    global alyona_fr
-    global alex_st
-    global alex_fr
-    global ofir_st
-    global ofir_fr
-    global yair_st
-    global yair_fr
-    global almog_st
-    global almog_fr
-    global ran_st
-    global ran_fr
-    global sahar_st
-    global sahar_fr
-    global pavel_st
-    global pavel_fr
 
     # after get from input which shifts each ops can not work, transform the data to format 'X = (can not work) ABC..'
     check()
@@ -604,67 +593,189 @@ def button_callback2():
     I.pop()
     J = J.split(" ")
     J.pop()
-    hello = "A B C D E F G H I J" #creat string
+    get_data()
+    global alyona_st
+    global alex_st
+    global ofir_st
+    global yair_st
+    global almog_st
+    global ran_st
+    global pavel_st
+    global sahar_st
+    global alyona_fr
+    global alex_fr
+    global ofir_fr
+    global yair_fr
+    global almog_fr
+    global ran_fr
+    global pavel_fr
+    global sahar_fr
+    global maxst
+    global maxfr
+    global shifts
+
+
+    st = [alyona_st, alex_st, ofir_st, almog_st, pavel_st, yair_st, sahar_st, pavel_st]
+    print(max(st))
+    print(min(st))
+    hello = "AR BR CR DR RE FR G HE I3 AR" #creat string
     hello = hello.split(" ") #list
-    print(hello)
-    gettingdata()
-    st = [alyona_st, almog_st, sahar_st, pavel_st, ran_st, ofir_st, yair_st, alex_st]
-    print(st)
-    for x in range(0, 9999):
+
+
+    for x in range(0, 25):
         s = 0
+        print(x)
+
         if C:
-            hello[2] = (random.choice(C))
-        else:
-            hello[2] = ("C")
+            for i in range(0, 500):
+                if (alyona_st <= min(st) + i) and (not "C" in alyona) and (not "alyona" in hello):
+                    hello[2] = ("alyona")
+                    minval = alyona_st
+                    break
+                if (alex_st <= min(st) + i) and (not "C" in alex) and (not "alex" in hello):
+                    hello[2] = ("alex")
+                    minval = alex_st
+
+                    break
+                if (ofir_st <= min(st) + i) and (not "C" in ofir) and (not "ofir" in hello):
+                    hello[2] = ("ofir")
+                    minval = ofir_st
+
+                    break
+                if (yair_st <= min(st) + i) and (not "C" in yair) and (not "yair" in hello):
+                    hello[2] = ("yair")
+                    minval = yair_st
+
+                    break
+                if (pavel_st <= min(st) + i) and (not "C" in pavel) and (not "pavel" in hello):
+                    hello[2] = ("pavel")
+                    minval = pavel_st
+
+                    break
+                if (sahar_st <= min(st) + i) and (not "C" in sahar) and (not "sahar" in hello):
+                    hello[2] = ("sahar")
+                    minval = sahar_st
+
+
+                    break
+                if (ran_st <= min(st) + i) and (not "C" in ran) and (not "ran" in hello):
+                    hello[2] = ("ran")
+                    minval = ran_st
+
+                    break
+                if (almog_st <= min(st) + i) and (not "C" in almog) and (not "almog" in hello):
+                    hello[2] = ("almog")
+                    minval = almog_st
+
+                    break
+                if i < 49:
+                    hello[2] = ("C")
+                    s = s + 1
+        elif (not C):
+            hello[2] = ("notC")
             s = s + 1
         if G:
-            hello[6] = (random.choice(G))
-        else:
+            for i in range(minval, 500):
+                if (alyona_st < min(st) + i) and (not "G" in alyona) and (not "alyona" in hello):
+                    hello[6] = ("alyona")
+                    break
+                if (alex_st < min(st) + i) and (not "G" in alex) and (not "alex" in hello):
+                    hello[6] = ("alex")
+                    break
+                if (ofir_st < min(st) + i) and (not "G" in ofir) and (not "ofir" in hello):
+                    hello[6] = ("ofir")
+                    break
+                if (yair_st < min(st) + i) and (not "G" in yair) and (not "yair" in hello):
+                    hello[6] = ("yair")
+                    break
+                if (pavel_st < min(st) + i) and (not "G" in pavel) and (not "pavel" in hello):
+                    hello[6] = ("pavel")
+                    break
+                if (sahar_st < min(st) + i) and (not "G" in sahar) and (not "sahar" in hello):
+                    hello[6] = ("sahar")
+                    break
+                if (ran_st < min(st) + i) and (not "G" in ran) and (not "ran" in hello):
+                    hello[6] = ("ran")
+                    break
+                if (almog_st < min(st) + i) and (not "G" in almog) and (not "almog" in hello):
+                    hello[6] = ("almog")
+                    break
+                if i < 49:
+                    hello[6] = ("notG")
+                    s = s + 1
+        elif (not G):
             hello[6] = ("G")
             s = s + 1
         if E:
-            hello[4] = (random.choice(E))
-        else:
-            hello[4] = ("E")
+            for x in range(0, 1000):
+                hello[4] = (random.choice(E))
+                if hello.count(hello[4]) == 1:
+                    break
+        elif (not E):
+            hello[5] = ("F")
             s = s + 1
         if F:
-            hello[5] = (random.choice(F))
-        else:
+            for x in range(0, 1000):
+                hello[5] = (random.choice(F))
+                if hello.count(hello[5]) == 1:
+                    break
+        elif (not F):
             hello[5] = ("F")
             s = s + 1
         if H:
-            hello[7] = (random.choice(H))
-        else:
+            for x in range(0, 1500):
+                hello[7] = (random.choice(H))
+                if hello.count(hello[7]) == 1:
+                    break
+        elif (not H):
             hello[7] = ("H")
+            s = s + 1
         if A:
-            hello[0] = (random.choice(A))
-        else:
+            for x in range(0, 1500):
+                hello[0] = (random.choice(H))
+                if hello.count(hello[0]) == 1:
+                    break
+        elif (not A):
             hello[0] = ("A")
             s = s + 1
         if B:
-            hello[1] = (random.choice(B))
-        else:
-            hello[1] = ("B")
+            for x in range(0, 1500):
+                hello[1] = (random.choice(H))
+                if hello.count(hello[1]) == 1:
+                    break
+        elif (not B):
+            hello[0] = ("B")
             s = s + 1
         if D:
-            hello[3] = (random.choice(D))
-        else:
+            for x in range(0, 1500):
+                hello[3] = (random.choice(H))
+                if hello.count(hello[3]) == 1:
+                    break
+        elif (not D):
             hello[3] = ("D")
             s = s + 1
-        if ((I) and (s > 0)):
-            hello[8] = (random.choice(I))
-        else:
+        if (I) and (s>0):
+            for x in range(0, 1000):
+                hello[8] = (random.choice(I))
+                if hello.count(hello[8]) == 1:
+                    break
+        elif (not I):
             hello[8] = ("I")
             s = s + 1
-        if ((J) and (s > 1)):
-            hello[9] = (random.choice(I))
-        else:
+        if (J) and (s>1):
+            for x in range(0, 5000):
+                hello[9] = (random.choice(I))
+                if hello.count(hello[9]) == 1:
+                    break
+        elif (not J):
             hello[9] = ("J")
 
         if (hello.count('alyona') == 1) and (hello.count('alex') == 1) and (
                 hello.count('ofir') == 1) and (hello.count('yair') == 1) and (hello.count('almog') == 1) and (
-                hello.count('pavel') == 1) and (hello.count('ran') == 1) and (hello.count('sahar') == 1):
+                hello.count('pavel') == 1) and (hello.count('ran') == 1) and (hello.count('sahar') == 1) and (hello.count('C') == 0) and (hello.count('G') == 0):
             break
+
+
 
     print(hello)
     his()
@@ -704,7 +815,6 @@ def design():
     ws['H5'] = (hello[3])
     ws['J2'] = (hello[0])
     ws['L4'] = (hello[2])
-    ws['J4'] = (hello[2])
     ws['J5'] = (hello[3])
     ws['B6'] = (hello[4])
     ws['B7'] = (hello[5])
@@ -962,30 +1072,27 @@ def his():
     append_df_to_excel('history.xlsx', df, sheet_name='his', index=True, startrow=0)
 
 
-
-
-def gettingdata():
+def get_data():
+    global alyona_st
+    global alex_st
+    global ofir_st
+    global yair_st
+    global almog_st
+    global ran_st
+    global pavel_st
+    global sahar_st
+    global alyona_fr
+    global alex_fr
+    global ofir_fr
+    global yair_fr
+    global almog_fr
+    global ran_fr
+    global pavel_fr
+    global sahar_fr
     sheets_list = wb2.sheetnames
     # range (i, j) and if j < 30 delete first item
     print(sheets_list)
-    global alyona_st
-    global alyona_fr
-    global alex_st
-    global alex_fr
-    global ofir_st
-    global ofir_fr
-    global yair_st
-    global yair_fr
-    global almog_st
-    global almog_fr
-    global ran_st
-    global ran_fr
-    global sahar_st
-    global sahar_fr
-    global pavel_st
-    global pavel_fr
-
-    for i in range(0, 9):
+    for i in range(0, 100):
         if 0 <= i < len(sheets_list):
             df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
             st = (df['SaturDay'])
@@ -993,47 +1100,44 @@ def gettingdata():
             if 'alyona' in st.values:
                 alyona_st = alyona_st + 1
             if 'alyona' in fr.values:
-                alyona_fr = alyona_st + 1
+                alyona_fr = alyona_fr + 1
             if 'alex' in st.values:
                 alex_st = alex_st + 1
             if 'alex' in fr.values:
-                alex_fr = alex_st + 1
+                alex_fr = alex_fr + 1
             if 'ofir' in st.values:
                 ofir_st = ofir_st + 1
             if 'ofir' in fr.values:
-                ofir_fr = ofir_st + 1
+                ofir_fr = ofir_fr + 1
             if 'yair' in st.values:
                 yair_st = yair_st + 1
             if 'yair' in fr.values:
-                yair_fr = yair_st + 1
+                yair_fr = yair_fr + 1
             if 'almog' in st.values:
                 almog_st = almog_st + 1
             if 'almog' in fr.values:
-                almog_fr = almog_st + 1
+                almog_fr = almog_fr + 1
             if 'ran' in st.values:
                 ran_st = ran_st + 1
             if 'ran' in fr.values:
-                ran_fr = ran_st + 1
+                ran_fr = ran_fr + 1
             if 'sahar' in st.values:
                 sahar_st = sahar_st + 1
             if 'sahar' in fr.values:
-                sahar_fr = sahar_st + 1
+                sahar_fr = sahar_fr + 1
             if 'pavel' in st.values:
                 pavel_st = pavel_st + 1
             if 'pavel' in fr.values:
-                pavel_fr = pavel_st + 1
+                pavel_fr = pavel_fr + 1
 
-
-    print(alyona_st, alyona_fr)
-    print(pavel_st, pavel_fr)
-    print(ran_st, ran_fr)
-    print(alex_st, alex_fr)
-    print(almog_st, almog_fr)
-
-
-
-
-
+    print("alyona", alyona_st, alyona_fr)
+    print("ofir", ofir_st, ofir_fr)
+    print("pavel", pavel_st, pavel_fr)
+    print("yair", yair_st, yair_fr)
+    print("alex", alex_st, alex_fr)
+    print("ran", ran_st, ran_fr)
+    print("sahar", sahar_st, sahar_fr)
+    print("almog", almog_st, almog_fr)
 
 
 
