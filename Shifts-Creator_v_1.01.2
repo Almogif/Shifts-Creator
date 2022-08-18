@@ -614,7 +614,7 @@ def button_callback2():
     global maxfr
     global shifts
 
-
+    fr = [alyona_fr, alex_fr, ofir_fr, almog_fr, pavel_fr, yair_fr, sahar_fr, pavel_fr]
     st = [alyona_st, alex_st, ofir_st, almog_st, pavel_st, yair_st, sahar_st, pavel_st]
     print(max(st))
     print(min(st))
@@ -630,43 +630,27 @@ def button_callback2():
             for i in range(0, 500):
                 if (alyona_st <= min(st) + i) and (not "C" in alyona) and (not "alyona" in hello):
                     hello[2] = ("alyona")
-                    minval = alyona_st
                     break
                 if (alex_st <= min(st) + i) and (not "C" in alex) and (not "alex" in hello):
                     hello[2] = ("alex")
-                    minval = alex_st
-
                     break
                 if (ofir_st <= min(st) + i) and (not "C" in ofir) and (not "ofir" in hello):
                     hello[2] = ("ofir")
-                    minval = ofir_st
-
                     break
                 if (yair_st <= min(st) + i) and (not "C" in yair) and (not "yair" in hello):
                     hello[2] = ("yair")
-                    minval = yair_st
-
                     break
                 if (pavel_st <= min(st) + i) and (not "C" in pavel) and (not "pavel" in hello):
                     hello[2] = ("pavel")
-                    minval = pavel_st
-
                     break
                 if (sahar_st <= min(st) + i) and (not "C" in sahar) and (not "sahar" in hello):
                     hello[2] = ("sahar")
-                    minval = sahar_st
-
-
                     break
                 if (ran_st <= min(st) + i) and (not "C" in ran) and (not "ran" in hello):
                     hello[2] = ("ran")
-                    minval = ran_st
-
                     break
                 if (almog_st <= min(st) + i) and (not "C" in almog) and (not "almog" in hello):
                     hello[2] = ("almog")
-                    minval = almog_st
-
                     break
                 if i < 49:
                     hello[2] = ("C")
@@ -675,7 +659,7 @@ def button_callback2():
             hello[2] = ("notC")
             s = s + 1
         if G:
-            for i in range(minval, 500):
+            for i in range(1, 500):
                 if (alyona_st < min(st) + i) and (not "G" in alyona) and (not "alyona" in hello):
                     hello[6] = ("alyona")
                     break
@@ -707,21 +691,67 @@ def button_callback2():
             hello[6] = ("G")
             s = s + 1
         if E:
-            for x in range(0, 1000):
-                hello[4] = (random.choice(E))
-                if hello.count(hello[4]) == 1:
+            for i in range(0, 500):
+                if (alyona_fr <= min(fr) + i) and (not "E" in alyona) and (not "alyona" in hello):
+                    hello[4] = ("alyona")
                     break
+                if (alex_fr <= min(fr) + i) and (not "E" in alex) and (not "alex" in hello):
+                    hello[4] = ("alex")
+                    break
+                if (ofir_fr <= min(fr) + i) and (not "E" in ofir) and (not "ofir" in hello):
+                    hello[4] = ("ofir")
+                    break
+                if (yair_fr <= min(fr) + i) and (not "E" in yair) and (not "yair" in hello):
+                    hello[4] = ("yair")
+                    break
+                if (pavel_fr <= min(fr) + i) and (not "E" in pavel) and (not "pavel" in hello):
+                    hello[4] = ("pavel")
+                    break
+                if (sahar_fr <= min(fr) + i) and (not "E" in sahar) and (not "sahar" in hello):
+                    hello[4] = ("sahar")
+                    break
+                if (ran_fr <= min(fr) + i) and (not "E" in ran) and (not "ran" in hello):
+                    hello[4] = ("ran")
+                    break
+                if (almog_fr <= min(fr) + i) and (not "E" in almog) and (not "almog" in hello):
+                    hello[4] = ("almog")
+                    break
+                if i < 49:
+                    hello[4] = ("E")
+                    s = s + 1
         elif (not E):
-            hello[5] = ("F")
-            s = s + 1
+            hello[4] = ("notE")
         if F:
-            for x in range(0, 1000):
-                hello[5] = (random.choice(F))
-                if hello.count(hello[5]) == 1:
+            for i in range(0, 500):
+                if (alyona_fr <= min(fr) + i) and (not "F" in alyona) and (not "alyona" in hello):
+                    hello[5] = ("alyona")
                     break
+                if (alex_fr <= min(fr) + i) and (not "F" in alex) and (not "alex" in hello):
+                    hello[5] = ("alex")
+                    break
+                if (ofir_fr <= min(fr) + i) and (not "F" in ofir) and (not "ofir" in hello):
+                    hello[5] = ("ofir")
+                    break
+                if (yair_fr <= min(fr) + i) and (not "F" in yair) and (not "yair" in hello):
+                    hello[5] = ("yair")
+                    break
+                if (pavel_fr <= min(fr) + i) and (not "F" in pavel) and (not "pavel" in hello):
+                    hello[5] = ("pavel")
+                    break
+                if (sahar_fr <= min(fr) + i) and (not "F" in sahar) and (not "sahar" in hello):
+                    hello[5] = ("sahar")
+                    break
+                if (ran_fr <= min(fr) + i) and (not "F" in ran) and (not "ran" in hello):
+                    hello[5] = ("ran")
+                    break
+                if (almog_fr <= min(fr) + i) and (not "F" in almog) and (not "almog" in hello):
+                    hello[5] = ("almog")
+                    break
+                if i < 59:
+                    hello[5] = ("F")
+                    s = s + 1
         elif (not F):
-            hello[5] = ("F")
-            s = s + 1
+            hello[5] = ("notF")
         if H:
             for x in range(0, 1500):
                 hello[7] = (random.choice(H))
