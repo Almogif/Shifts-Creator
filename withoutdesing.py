@@ -1,14 +1,13 @@
 import tkinter
+from tkinter import ttk
 from tkinter import *
 import random
-from tkinter.tix import ComboBox
 from openpyxl import Workbook
 from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Font, GradientFill
 from openpyxl.styles import NamedStyle, Font, Border, Side
 from openpyxl import load_workbook
 import pandas as pd
 import os
-import array as arr
 
 
 highlight = NamedStyle(name="highlight")
@@ -1189,13 +1188,15 @@ label_1.pack(pady=12, padx=10)
 
 # entry_1 = customtkinter.CTkEntry(master=frame_1, placeholder_text="CTkEntry")
 # entry_1.pack(pady=12, padx=10)
+# variable = StringVar()
+# optionmenu_1 = tkinter.OptionMenu(master=frame_1, variable,
+#                                            value=["Alyona", "Alex", "Ofir", "Yair", "Almog", "Pavel", "Ran", "Sahar"])
+# optionmenu_1.pack(pady=12, padx=10)
 
-optionmenu_1 = tkinter.OptionMenu(master=frame_1,
-                                           value=["Alyona", "Alex", "Ofir", "Yair", "Almog", "Pavel", "Ran", "Sahar"])
+optionmenu_1 = ttk.Combobox(master=frame_1, values=["Alyona", "Alex", "Ofir", "Yair", "Almog", "Pavel", "Ran", "Sahar"])
 optionmenu_1.pack(pady=12, padx=10)
-optionmenu_1.set("Alyona")
 
-combobox_1 = ComboBox(frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning", "Wed-Morning",
+combobox_1 = ttk.Combobox(master=frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning", "Wed-Morning",
                                                         "Thu-Morning", "Fri-Morning", "Sun-Night", "Mon-Night",
                                                         "Tue-Night", "Wed-Night", "Thu-Night", "Sat-Night"])
 combobox_1.pack(pady=12, padx=10)
