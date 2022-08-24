@@ -851,8 +851,1943 @@ def design():
         if 'Almog' in hello[9]:
             ws['A11'] = "Vac"
             ws['B11'] = "Vac"
-
-
+    if 'AlmogVacMon' in val:
+        if 'Almog' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'AlmogVacTue' in val:
+        if 'Almog' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'AlmogVacWed' in val:
+        if 'Almog' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'AlmogVacThu' in val:
+        if 'Almog' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'AlmogVacFri' in val:
+        if 'Almog' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'AlmogVacSat' in val:
+        if 'Almog' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'AlmogVacAll' in val:
+        if 'Almog' in hello[0]:
+            ws['A2'] = "Almog-Vac"
+            ws['B2'] = "Almog-Vac"
+            ws['C2'] = "Almog-Vac"
+            ws['D2'] = "Almog-Vac"
+            ws['E2'] = "Almog-Vac"
+            ws['F2'] = "Almog-Vac"
+            ws['G2'] = "Almog-Vac"
+            ws['H2'] = "Almog-Vac"
+            ws['I2'] = "Almog-Vac"
+            ws['J2'] = "Almog-Vac"
+            ws['K2'] = "Almog-Vac"
+            ws['L2'] = "Almog-Vac"
+        if 'Almog' in hello[1]:
+            ws['A3'] = "Almog-Vac"
+            ws['B3'] = "Almog-Vac"
+            ws['C3'] = "Almog-Vac"
+            ws['D3'] = "Almog-Vac"
+            ws['E3'] = "Almog-Vac"
+            ws['F3'] = "Almog-Vac"
+            ws['G3'] = "Almog-Vac"
+            ws['H3'] = "Almog-Vac"
+            ws['I3'] = "Almog-Vac"
+            ws['J3'] = "Almog-Vac"
+            ws['K3'] = "Almog-Vac"
+            ws['L3'] = "Almog-Vac"
+        if 'Almog' in hello[2]:
+            ws['A4'] = "Almog-Vac"
+            ws['B4'] = "Almog-Vac"
+            ws['C4'] = "Almog-Vac"
+            ws['D4'] = "Almog-Vac"
+            ws['E4'] = "Almog-Vac"
+            ws['F4'] = "Almog-Vac"
+            ws['G4'] = "Almog-Vac"
+            ws['H4'] = "Almog-Vac"
+            ws['I4'] = "Almog-Vac"
+            ws['J4'] = "Almog-Vac"
+            ws['K4'] = "Almog-Vac"
+            ws['L4'] = "Almog-Vac"
+        if 'Almog' in hello[3]:
+            ws['A5'] = "Almog-Vac"
+            ws['B5'] = "Almog-Vac"
+            ws['C5'] = "Almog-Vac"
+            ws['D5'] = "Almog-Vac"
+            ws['E5'] = "Almog-Vac"
+            ws['F5'] = "Almog-Vac"
+            ws['G5'] = "Almog-Vac"
+            ws['H5'] = "Almog-Vac"
+            ws['I5'] = "Almog-Vac"
+            ws['J5'] = "Almog-Vac"
+            ws['K5'] = "Almog-Vac"
+            ws['L5'] = "Almog-Vac"
+        if 'Almog' in hello[4]:
+            ws['A6'] = "Almog-Vac"
+            ws['B6'] = "Almog-Vac"
+            ws['C6'] = "Almog-Vac"
+            ws['D6'] = "Almog-Vac"
+            ws['E6'] = "Almog-Vac"
+            ws['F6'] = "Almog-Vac"
+            ws['G6'] = "Almog-Vac"
+            ws['H6'] = "Almog-Vac"
+            ws['I6'] = "Almog-Vac"
+            ws['J6'] = "Almog-Vac"
+            ws['K6'] = "Almog-Vac"
+            ws['L6'] = "Almog-Vac"
+        if 'Almog' in hello[5]:
+            ws['A7'] = "Almog-Vac"
+            ws['B7'] = "Almog-Vac"
+            ws['C7'] = "Almog-Vac"
+            ws['D7'] = "Almog-Vac"
+            ws['E7'] = "Almog-Vac"
+            ws['F7'] = "Almog-Vac"
+            ws['G7'] = "Almog-Vac"
+            ws['H7'] = "Almog-Vac"
+            ws['I7'] = "Almog-Vac"
+            ws['J7'] = "Almog-Vac"
+            ws['K7'] = "Almog-Vac"
+            ws['L7'] = "Almog-Vac"
+        if 'Almog' in hello[6]:
+            ws['A8'] = "Almog-Vac"
+            ws['B8'] = "Almog-Vac"
+            ws['C8'] = "Almog-Vac"
+            ws['D8'] = "Almog-Vac"
+            ws['E8'] = "Almog-Vac"
+            ws['F8'] = "Almog-Vac"
+            ws['G8'] = "Almog-Vac"
+            ws['H8'] = "Almog-Vac"
+            ws['I8'] = "Almog-Vac"
+            ws['J8'] = "Almog-Vac"
+            ws['K8'] = "Almog-Vac"
+            ws['L8'] = "Almog-Vac"
+        if 'Almog' in hello[7]:
+            ws['A9'] = "Almog-Vac"
+            ws['B9'] = "Almog-Vac"
+            ws['C9'] = "Almog-Vac"
+            ws['D9'] = "Almog-Vac"
+            ws['E9'] = "Almog-Vac"
+            ws['F9'] = "Almog-Vac"
+            ws['G9'] = "Almog-Vac"
+            ws['H9'] = "Almog-Vac"
+            ws['I9'] = "Almog-Vac"
+            ws['J9'] = "Almog-Vac"
+            ws['K9'] = "Almog-Vac"
+            ws['L9'] = "Almog-Vac"
+        if 'Almog' in hello[8]:
+            ws['A9'] = "Almog-Vac"
+            ws['B9'] = "Almog-Vac"
+            ws['C9'] = "Almog-Vac"
+            ws['D9'] = "Almog-Vac"
+            ws['E9'] = "Almog-Vac"
+            ws['F9'] = "Almog-Vac"
+            ws['G9'] = "Almog-Vac"
+            ws['H9'] = "Almog-Vac"
+            ws['I9'] = "Almog-Vac"
+            ws['J9'] = "Almog-Vac"
+            ws['K9'] = "Almog-Vac"
+            ws['L9'] = "Almog-Vac"
+        if 'Almog' in hello[9]:
+            ws['A10'] = "Almog-Vac"
+            ws['B10'] = "Almog-Vac"
+            ws['C10'] = "Almog-Vac"
+            ws['D10'] = "Almog-Vac"
+            ws['E10'] = "Almog-Vac"
+            ws['F10'] = "Almog-Vac"
+            ws['G10'] = "Almog-Vac"
+            ws['H10'] = "Almog-Vac"
+            ws['I10'] = "Almog-Vac"
+            ws['J10'] = "Almog-Vac"
+            ws['K10'] = "Almog-Vac"
+            ws['L10'] = "Almog-Vac"
+    if 'AlyonaVacSun' in val:
+        if 'Alyona' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+    if 'AlyonaVacMon' in val:
+        if 'Alyona' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'AlyonaVacTue' in val:
+        if 'Alyona' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'AlyonaVacWed' in val:
+        if 'Alyona' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'AlyonaVacThu' in val:
+        if 'Alyona' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'AlyonaVacFri' in val:
+        if 'Alyona' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'AlyonaVacSat' in val:
+        if 'Alyona' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Alyona' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Alyona' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Alyona' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Alyona' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Alyona' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Alyona' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Alyona' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Alyona' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Alyona' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'AlyonaVacAll' in val:
+        if 'Alyona' in hello[0]:
+            ws['A2'] = "Alyona-Vac"
+            ws['B2'] = "Alyona-Vac"
+            ws['C2'] = "Alyona-Vac"
+            ws['D2'] = "Alyona-Vac"
+            ws['E2'] = "Alyona-Vac"
+            ws['F2'] = "Alyona-Vac"
+            ws['G2'] = "Alyona-Vac"
+            ws['H2'] = "Alyona-Vac"
+            ws['I2'] = "Alyona-Vac"
+            ws['J2'] = "Alyona-Vac"
+            ws['K2'] = "Alyona-Vac"
+            ws['L2'] = "Alyona-Vac"
+        if 'Alyona' in hello[1]:
+            ws['A3'] = "Alyona-Vac"
+            ws['B3'] = "Alyona-Vac"
+            ws['C3'] = "Alyona-Vac"
+            ws['D3'] = "Alyona-Vac"
+            ws['E3'] = "Alyona-Vac"
+            ws['F3'] = "Alyona-Vac"
+            ws['G3'] = "Alyona-Vac"
+            ws['H3'] = "Alyona-Vac"
+            ws['I3'] = "Alyona-Vac"
+            ws['J3'] = "Alyona-Vac"
+            ws['K3'] = "Alyona-Vac"
+            ws['L3'] = "Alyona-Vac"
+        if 'Alyona' in hello[2]:
+            ws['A4'] = "Alyona-Vac"
+            ws['B4'] = "Alyona-Vac"
+            ws['C4'] = "Alyona-Vac"
+            ws['D4'] = "Alyona-Vac"
+            ws['E4'] = "Alyona-Vac"
+            ws['F4'] = "Alyona-Vac"
+            ws['G4'] = "Alyona-Vac"
+            ws['H4'] = "Alyona-Vac"
+            ws['I4'] = "Alyona-Vac"
+            ws['J4'] = "Alyona-Vac"
+            ws['K4'] = "Alyona-Vac"
+            ws['L4'] = "Alyona-Vac"
+        if 'Alyona' in hello[3]:
+            ws['A5'] = "Alyona-Vac"
+            ws['B5'] = "Alyona-Vac"
+            ws['C5'] = "Alyona-Vac"
+            ws['D5'] = "Alyona-Vac"
+            ws['E5'] = "Alyona-Vac"
+            ws['F5'] = "Alyona-Vac"
+            ws['G5'] = "Alyona-Vac"
+            ws['H5'] = "Alyona-Vac"
+            ws['I5'] = "Alyona-Vac"
+            ws['J5'] = "Alyona-Vac"
+            ws['K5'] = "Alyona-Vac"
+            ws['L5'] = "Alyona-Vac"
+        if 'Alyona' in hello[4]:
+            ws['A6'] = "Alyona-Vac"
+            ws['B6'] = "Alyona-Vac"
+            ws['C6'] = "Alyona-Vac"
+            ws['D6'] = "Alyona-Vac"
+            ws['E6'] = "Alyona-Vac"
+            ws['F6'] = "Alyona-Vac"
+            ws['G6'] = "Alyona-Vac"
+            ws['H6'] = "Alyona-Vac"
+            ws['I6'] = "Alyona-Vac"
+            ws['J6'] = "Alyona-Vac"
+            ws['K6'] = "Alyona-Vac"
+            ws['L6'] = "Alyona-Vac"
+        if 'Alyona' in hello[5]:
+            ws['A7'] = "Alyona-Vac"
+            ws['B7'] = "Alyona-Vac"
+            ws['C7'] = "Alyona-Vac"
+            ws['D7'] = "Alyona-Vac"
+            ws['E7'] = "Alyona-Vac"
+            ws['F7'] = "Alyona-Vac"
+            ws['G7'] = "Alyona-Vac"
+            ws['H7'] = "Alyona-Vac"
+            ws['I7'] = "Alyona-Vac"
+            ws['J7'] = "Alyona-Vac"
+            ws['K7'] = "Alyona-Vac"
+            ws['L7'] = "Alyona-Vac"
+        if 'Alyona' in hello[6]:
+            ws['A8'] = "Alyona-Vac"
+            ws['B8'] = "Alyona-Vac"
+            ws['C8'] = "Alyona-Vac"
+            ws['D8'] = "Alyona-Vac"
+            ws['E8'] = "Alyona-Vac"
+            ws['F8'] = "Alyona-Vac"
+            ws['G8'] = "Alyona-Vac"
+            ws['H8'] = "Alyona-Vac"
+            ws['I8'] = "Alyona-Vac"
+            ws['J8'] = "Alyona-Vac"
+            ws['K8'] = "Alyona-Vac"
+            ws['L8'] = "Alyona-Vac"
+        if 'Alyona' in hello[7]:
+            ws['A9'] = "Alyona-Vac"
+            ws['B9'] = "Alyona-Vac"
+            ws['C9'] = "Alyona-Vac"
+            ws['D9'] = "Alyona-Vac"
+            ws['E9'] = "Alyona-Vac"
+            ws['F9'] = "Alyona-Vac"
+            ws['G9'] = "Alyona-Vac"
+            ws['H9'] = "Alyona-Vac"
+            ws['I9'] = "Alyona-Vac"
+            ws['J9'] = "Alyona-Vac"
+            ws['K9'] = "Alyona-Vac"
+            ws['L9'] = "Alyona-Vac"
+        if 'Alyona' in hello[8]:
+            ws['A9'] = "Alyona-Vac"
+            ws['B9'] = "Alyona-Vac"
+            ws['C9'] = "Alyona-Vac"
+            ws['D9'] = "Alyona-Vac"
+            ws['E9'] = "Alyona-Vac"
+            ws['F9'] = "Alyona-Vac"
+            ws['G9'] = "Alyona-Vac"
+            ws['H9'] = "Alyona-Vac"
+            ws['I9'] = "Alyona-Vac"
+            ws['J9'] = "Alyona-Vac"
+            ws['K9'] = "Alyona-Vac"
+            ws['L9'] = "Alyona-Vac"
+        if 'Alyona' in hello[9]:
+            ws['A10'] = "Alyona-Vac"
+            ws['B10'] = "Alyona-Vac"
+            ws['C10'] = "Alyona-Vac"
+            ws['D10'] = "Alyona-Vac"
+            ws['E10'] = "Alyona-Vac"
+            ws['F10'] = "Alyona-Vac"
+            ws['G10'] = "Alyona-Vac"
+            ws['H10'] = "Alyona-Vac"
+            ws['I10'] = "Alyona-Vac"
+            ws['J10'] = "Alyona-Vac"
+            ws['K10'] = "Alyona-Vac"
+            ws['L10'] = "Alyona-Vac"
+    if 'OfirVacSun' in val:
+        if 'Ofir' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+    if 'OfirVacMon' in val:
+        if 'Ofir' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'OfirVacTue' in val:
+        if 'Ofir' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'OfirVacWed' in val:
+        if 'Ofir' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'OfirVacThu' in val:
+        if 'Ofir' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'OfirVacFri' in val:
+        if 'Ofir' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'OfirVacSat' in val:
+        if 'Ofir' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Ofir' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Ofir' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Ofir' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Ofir' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Ofir' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Ofir' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Ofir' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Ofir' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Ofir' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'OfirVacAll' in val:
+        if 'Ofir' in hello[0]:
+            ws['A2'] = "Ofir-Vac"
+            ws['B2'] = "Ofir-Vac"
+            ws['C2'] = "Ofir-Vac"
+            ws['D2'] = "Ofir-Vac"
+            ws['E2'] = "Ofir-Vac"
+            ws['F2'] = "Ofir-Vac"
+            ws['G2'] = "Ofir-Vac"
+            ws['H2'] = "Ofir-Vac"
+            ws['I2'] = "Ofir-Vac"
+            ws['J2'] = "Ofir-Vac"
+            ws['K2'] = "Ofir-Vac"
+            ws['L2'] = "Ofir-Vac"
+        if 'Ofir' in hello[1]:
+            ws['A3'] = "Ofir-Vac"
+            ws['B3'] = "Ofir-Vac"
+            ws['C3'] = "Ofir-Vac"
+            ws['D3'] = "Ofir-Vac"
+            ws['E3'] = "Ofir-Vac"
+            ws['F3'] = "Ofir-Vac"
+            ws['G3'] = "Ofir-Vac"
+            ws['H3'] = "Ofir-Vac"
+            ws['I3'] = "Ofir-Vac"
+            ws['J3'] = "Ofir-Vac"
+            ws['K3'] = "Ofir-Vac"
+            ws['L3'] = "Ofir-Vac"
+        if 'Ofir' in hello[2]:
+            ws['A4'] = "Ofir-Vac"
+            ws['B4'] = "Ofir-Vac"
+            ws['C4'] = "Ofir-Vac"
+            ws['D4'] = "Ofir-Vac"
+            ws['E4'] = "Ofir-Vac"
+            ws['F4'] = "Ofir-Vac"
+            ws['G4'] = "Ofir-Vac"
+            ws['H4'] = "Ofir-Vac"
+            ws['I4'] = "Ofir-Vac"
+            ws['J4'] = "Ofir-Vac"
+            ws['K4'] = "Ofir-Vac"
+            ws['L4'] = "Ofir-Vac"
+        if 'Ofir' in hello[3]:
+            ws['A5'] = "Ofir-Vac"
+            ws['B5'] = "Ofir-Vac"
+            ws['C5'] = "Ofir-Vac"
+            ws['D5'] = "Ofir-Vac"
+            ws['E5'] = "Ofir-Vac"
+            ws['F5'] = "Ofir-Vac"
+            ws['G5'] = "Ofir-Vac"
+            ws['H5'] = "Ofir-Vac"
+            ws['I5'] = "Ofir-Vac"
+            ws['J5'] = "Ofir-Vac"
+            ws['K5'] = "Ofir-Vac"
+            ws['L5'] = "Ofir-Vac"
+        if 'Ofir' in hello[4]:
+            ws['A6'] = "Ofir-Vac"
+            ws['B6'] = "Ofir-Vac"
+            ws['C6'] = "Ofir-Vac"
+            ws['D6'] = "Ofir-Vac"
+            ws['E6'] = "Ofir-Vac"
+            ws['F6'] = "Ofir-Vac"
+            ws['G6'] = "Ofir-Vac"
+            ws['H6'] = "Ofir-Vac"
+            ws['I6'] = "Ofir-Vac"
+            ws['J6'] = "Ofir-Vac"
+            ws['K6'] = "Ofir-Vac"
+            ws['L6'] = "Ofir-Vac"
+        if 'Ofir' in hello[5]:
+            ws['A7'] = "Ofir-Vac"
+            ws['B7'] = "Ofir-Vac"
+            ws['C7'] = "Ofir-Vac"
+            ws['D7'] = "Ofir-Vac"
+            ws['E7'] = "Ofir-Vac"
+            ws['F7'] = "Ofir-Vac"
+            ws['G7'] = "Ofir-Vac"
+            ws['H7'] = "Ofir-Vac"
+            ws['I7'] = "Ofir-Vac"
+            ws['J7'] = "Ofir-Vac"
+            ws['K7'] = "Ofir-Vac"
+            ws['L7'] = "Ofir-Vac"
+        if 'Ofir' in hello[6]:
+            ws['A8'] = "Ofir-Vac"
+            ws['B8'] = "Ofir-Vac"
+            ws['C8'] = "Ofir-Vac"
+            ws['D8'] = "Ofir-Vac"
+            ws['E8'] = "Ofir-Vac"
+            ws['F8'] = "Ofir-Vac"
+            ws['G8'] = "Ofir-Vac"
+            ws['H8'] = "Ofir-Vac"
+            ws['I8'] = "Ofir-Vac"
+            ws['J8'] = "Ofir-Vac"
+            ws['K8'] = "Ofir-Vac"
+            ws['L8'] = "Ofir-Vac"
+        if 'Ofir' in hello[7]:
+            ws['A9'] = "Ofir-Vac"
+            ws['B9'] = "Ofir-Vac"
+            ws['C9'] = "Ofir-Vac"
+            ws['D9'] = "Ofir-Vac"
+            ws['E9'] = "Ofir-Vac"
+            ws['F9'] = "Ofir-Vac"
+            ws['G9'] = "Ofir-Vac"
+            ws['H9'] = "Ofir-Vac"
+            ws['I9'] = "Ofir-Vac"
+            ws['J9'] = "Ofir-Vac"
+            ws['K9'] = "Ofir-Vac"
+            ws['L9'] = "Ofir-Vac"
+        if 'Ofir' in hello[8]:
+            ws['A9'] = "Ofir-Vac"
+            ws['B9'] = "Ofir-Vac"
+            ws['C9'] = "Ofir-Vac"
+            ws['D9'] = "Ofir-Vac"
+            ws['E9'] = "Ofir-Vac"
+            ws['F9'] = "Ofir-Vac"
+            ws['G9'] = "Ofir-Vac"
+            ws['H9'] = "Ofir-Vac"
+            ws['I9'] = "Ofir-Vac"
+            ws['J9'] = "Ofir-Vac"
+            ws['K9'] = "Ofir-Vac"
+            ws['L9'] = "Ofir-Vac"
+        if 'Ofir' in hello[9]:
+            ws['A10'] = "Ofir-Vac"
+            ws['B10'] = "Ofir-Vac"
+            ws['C10'] = "Ofir-Vac"
+            ws['D10'] = "Ofir-Vac"
+            ws['E10'] = "Ofir-Vac"
+            ws['F10'] = "Ofir-Vac"
+            ws['G10'] = "Ofir-Vac"
+            ws['H10'] = "Ofir-Vac"
+            ws['I10'] = "Ofir-Vac"
+            ws['J10'] = "Ofir-Vac"
+            ws['K10'] = "Ofir-Vac"
+            ws['L10'] = "Ofir-Vac"
+    if 'YairVacSun' in val:
+        if 'Yair' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+    if 'YairVacMon' in val:
+        if 'Yair' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'YairVacTue' in val:
+        if 'Yair' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'YairVacWed' in val:
+        if 'Yair' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'YairVacThu' in val:
+        if 'Yair' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'YairVacFri' in val:
+        if 'Yair' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'YairVacSat' in val:
+        if 'Yair' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Yair' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Yair' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Yair' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Yair' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Yair' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Yair' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Yair' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Yair' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Yair' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'YairVacAll' in val:
+        if 'Yair' in hello[0]:
+            ws['A2'] = "Yair-Vac"
+            ws['B2'] = "Yair-Vac"
+            ws['C2'] = "Yair-Vac"
+            ws['D2'] = "Yair-Vac"
+            ws['E2'] = "Yair-Vac"
+            ws['F2'] = "Yair-Vac"
+            ws['G2'] = "Yair-Vac"
+            ws['H2'] = "Yair-Vac"
+            ws['I2'] = "Yair-Vac"
+            ws['J2'] = "Yair-Vac"
+            ws['K2'] = "Yair-Vac"
+            ws['L2'] = "Yair-Vac"
+        if 'Yair' in hello[1]:
+            ws['A3'] = "Yair-Vac"
+            ws['B3'] = "Yair-Vac"
+            ws['C3'] = "Yair-Vac"
+            ws['D3'] = "Yair-Vac"
+            ws['E3'] = "Yair-Vac"
+            ws['F3'] = "Yair-Vac"
+            ws['G3'] = "Yair-Vac"
+            ws['H3'] = "Yair-Vac"
+            ws['I3'] = "Yair-Vac"
+            ws['J3'] = "Yair-Vac"
+            ws['K3'] = "Yair-Vac"
+            ws['L3'] = "Yair-Vac"
+        if 'Yair' in hello[2]:
+            ws['A4'] = "Yair-Vac"
+            ws['B4'] = "Yair-Vac"
+            ws['C4'] = "Yair-Vac"
+            ws['D4'] = "Yair-Vac"
+            ws['E4'] = "Yair-Vac"
+            ws['F4'] = "Yair-Vac"
+            ws['G4'] = "Yair-Vac"
+            ws['H4'] = "Yair-Vac"
+            ws['I4'] = "Yair-Vac"
+            ws['J4'] = "Yair-Vac"
+            ws['K4'] = "Yair-Vac"
+            ws['L4'] = "Yair-Vac"
+        if 'Yair' in hello[3]:
+            ws['A5'] = "Yair-Vac"
+            ws['B5'] = "Yair-Vac"
+            ws['C5'] = "Yair-Vac"
+            ws['D5'] = "Yair-Vac"
+            ws['E5'] = "Yair-Vac"
+            ws['F5'] = "Yair-Vac"
+            ws['G5'] = "Yair-Vac"
+            ws['H5'] = "Yair-Vac"
+            ws['I5'] = "Yair-Vac"
+            ws['J5'] = "Yair-Vac"
+            ws['K5'] = "Yair-Vac"
+            ws['L5'] = "Yair-Vac"
+        if 'Yair' in hello[4]:
+            ws['A6'] = "Yair-Vac"
+            ws['B6'] = "Yair-Vac"
+            ws['C6'] = "Yair-Vac"
+            ws['D6'] = "Yair-Vac"
+            ws['E6'] = "Yair-Vac"
+            ws['F6'] = "Yair-Vac"
+            ws['G6'] = "Yair-Vac"
+            ws['H6'] = "Yair-Vac"
+            ws['I6'] = "Yair-Vac"
+            ws['J6'] = "Yair-Vac"
+            ws['K6'] = "Yair-Vac"
+            ws['L6'] = "Yair-Vac"
+        if 'Yair' in hello[5]:
+            ws['A7'] = "Yair-Vac"
+            ws['B7'] = "Yair-Vac"
+            ws['C7'] = "Yair-Vac"
+            ws['D7'] = "Yair-Vac"
+            ws['E7'] = "Yair-Vac"
+            ws['F7'] = "Yair-Vac"
+            ws['G7'] = "Yair-Vac"
+            ws['H7'] = "Yair-Vac"
+            ws['I7'] = "Yair-Vac"
+            ws['J7'] = "Yair-Vac"
+            ws['K7'] = "Yair-Vac"
+            ws['L7'] = "Yair-Vac"
+        if 'Yair' in hello[6]:
+            ws['A8'] = "Yair-Vac"
+            ws['B8'] = "Yair-Vac"
+            ws['C8'] = "Yair-Vac"
+            ws['D8'] = "Yair-Vac"
+            ws['E8'] = "Yair-Vac"
+            ws['F8'] = "Yair-Vac"
+            ws['G8'] = "Yair-Vac"
+            ws['H8'] = "Yair-Vac"
+            ws['I8'] = "Yair-Vac"
+            ws['J8'] = "Yair-Vac"
+            ws['K8'] = "Yair-Vac"
+            ws['L8'] = "Yair-Vac"
+        if 'Yair' in hello[7]:
+            ws['A9'] = "Yair-Vac"
+            ws['B9'] = "Yair-Vac"
+            ws['C9'] = "Yair-Vac"
+            ws['D9'] = "Yair-Vac"
+            ws['E9'] = "Yair-Vac"
+            ws['F9'] = "Yair-Vac"
+            ws['G9'] = "Yair-Vac"
+            ws['H9'] = "Yair-Vac"
+            ws['I9'] = "Yair-Vac"
+            ws['J9'] = "Yair-Vac"
+            ws['K9'] = "Yair-Vac"
+            ws['L9'] = "Yair-Vac"
+        if 'Yair' in hello[8]:
+            ws['A9'] = "Yair-Vac"
+            ws['B9'] = "Yair-Vac"
+            ws['C9'] = "Yair-Vac"
+            ws['D9'] = "Yair-Vac"
+            ws['E9'] = "Yair-Vac"
+            ws['F9'] = "Yair-Vac"
+            ws['G9'] = "Yair-Vac"
+            ws['H9'] = "Yair-Vac"
+            ws['I9'] = "Yair-Vac"
+            ws['J9'] = "Yair-Vac"
+            ws['K9'] = "Yair-Vac"
+            ws['L9'] = "Yair-Vac"
+        if 'Yair' in hello[9]:
+            ws['A10'] = "Yair-Vac"
+            ws['B10'] = "Yair-Vac"
+            ws['C10'] = "Yair-Vac"
+            ws['D10'] = "Yair-Vac"
+            ws['E10'] = "Yair-Vac"
+            ws['F10'] = "Yair-Vac"
+            ws['G10'] = "Yair-Vac"
+            ws['H10'] = "Yair-Vac"
+            ws['I10'] = "Yair-Vac"
+            ws['J10'] = "Yair-Vac"
+            ws['K10'] = "Yair-Vac"
+            ws['L10'] = "Yair-Vac"
+    if 'RanVacSun' in val:
+        if 'Ran' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+    if 'RanVacMon' in val:
+        if 'Ran' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'RanVacTue' in val:
+        if 'Ran' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'RanVacWed' in val:
+        if 'Ran' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'RanVacThu' in val:
+        if 'Ran' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'RanVacFri' in val:
+        if 'Ran' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'RanVacSat' in val:
+        if 'Ran' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Ran' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Ran' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Ran' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Ran' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Ran' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Ran' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Ran' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Ran' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Ran' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'RanVacAll' in val:
+        if 'Ran' in hello[0]:
+            ws['A2'] = "Ran-Vac"
+            ws['B2'] = "Ran-Vac"
+            ws['C2'] = "Ran-Vac"
+            ws['D2'] = "Ran-Vac"
+            ws['E2'] = "Ran-Vac"
+            ws['F2'] = "Ran-Vac"
+            ws['G2'] = "Ran-Vac"
+            ws['H2'] = "Ran-Vac"
+            ws['I2'] = "Ran-Vac"
+            ws['J2'] = "Ran-Vac"
+            ws['K2'] = "Ran-Vac"
+            ws['L2'] = "Ran-Vac"
+        if 'Ran' in hello[1]:
+            ws['A3'] = "Ran-Vac"
+            ws['B3'] = "Ran-Vac"
+            ws['C3'] = "Ran-Vac"
+            ws['D3'] = "Ran-Vac"
+            ws['E3'] = "Ran-Vac"
+            ws['F3'] = "Ran-Vac"
+            ws['G3'] = "Ran-Vac"
+            ws['H3'] = "Ran-Vac"
+            ws['I3'] = "Ran-Vac"
+            ws['J3'] = "Ran-Vac"
+            ws['K3'] = "Ran-Vac"
+            ws['L3'] = "Ran-Vac"
+        if 'Ran' in hello[2]:
+            ws['A4'] = "Ran-Vac"
+            ws['B4'] = "Ran-Vac"
+            ws['C4'] = "Ran-Vac"
+            ws['D4'] = "Ran-Vac"
+            ws['E4'] = "Ran-Vac"
+            ws['F4'] = "Ran-Vac"
+            ws['G4'] = "Ran-Vac"
+            ws['H4'] = "Ran-Vac"
+            ws['I4'] = "Ran-Vac"
+            ws['J4'] = "Ran-Vac"
+            ws['K4'] = "Ran-Vac"
+            ws['L4'] = "Ran-Vac"
+        if 'Ran' in hello[3]:
+            ws['A5'] = "Ran-Vac"
+            ws['B5'] = "Ran-Vac"
+            ws['C5'] = "Ran-Vac"
+            ws['D5'] = "Ran-Vac"
+            ws['E5'] = "Ran-Vac"
+            ws['F5'] = "Ran-Vac"
+            ws['G5'] = "Ran-Vac"
+            ws['H5'] = "Ran-Vac"
+            ws['I5'] = "Ran-Vac"
+            ws['J5'] = "Ran-Vac"
+            ws['K5'] = "Ran-Vac"
+            ws['L5'] = "Ran-Vac"
+        if 'Ran' in hello[4]:
+            ws['A6'] = "Ran-Vac"
+            ws['B6'] = "Ran-Vac"
+            ws['C6'] = "Ran-Vac"
+            ws['D6'] = "Ran-Vac"
+            ws['E6'] = "Ran-Vac"
+            ws['F6'] = "Ran-Vac"
+            ws['G6'] = "Ran-Vac"
+            ws['H6'] = "Ran-Vac"
+            ws['I6'] = "Ran-Vac"
+            ws['J6'] = "Ran-Vac"
+            ws['K6'] = "Ran-Vac"
+            ws['L6'] = "Ran-Vac"
+        if 'Ran' in hello[5]:
+            ws['A7'] = "Ran-Vac"
+            ws['B7'] = "Ran-Vac"
+            ws['C7'] = "Ran-Vac"
+            ws['D7'] = "Ran-Vac"
+            ws['E7'] = "Ran-Vac"
+            ws['F7'] = "Ran-Vac"
+            ws['G7'] = "Ran-Vac"
+            ws['H7'] = "Ran-Vac"
+            ws['I7'] = "Ran-Vac"
+            ws['J7'] = "Ran-Vac"
+            ws['K7'] = "Ran-Vac"
+            ws['L7'] = "Ran-Vac"
+        if 'Ran' in hello[6]:
+            ws['A8'] = "Ran-Vac"
+            ws['B8'] = "Ran-Vac"
+            ws['C8'] = "Ran-Vac"
+            ws['D8'] = "Ran-Vac"
+            ws['E8'] = "Ran-Vac"
+            ws['F8'] = "Ran-Vac"
+            ws['G8'] = "Ran-Vac"
+            ws['H8'] = "Ran-Vac"
+            ws['I8'] = "Ran-Vac"
+            ws['J8'] = "Ran-Vac"
+            ws['K8'] = "Ran-Vac"
+            ws['L8'] = "Ran-Vac"
+        if 'Ran' in hello[7]:
+            ws['A9'] = "Ran-Vac"
+            ws['B9'] = "Ran-Vac"
+            ws['C9'] = "Ran-Vac"
+            ws['D9'] = "Ran-Vac"
+            ws['E9'] = "Ran-Vac"
+            ws['F9'] = "Ran-Vac"
+            ws['G9'] = "Ran-Vac"
+            ws['H9'] = "Ran-Vac"
+            ws['I9'] = "Ran-Vac"
+            ws['J9'] = "Ran-Vac"
+            ws['K9'] = "Ran-Vac"
+            ws['L9'] = "Ran-Vac"
+        if 'Ran' in hello[8]:
+            ws['A9'] = "Ran-Vac"
+            ws['B9'] = "Ran-Vac"
+            ws['C9'] = "Ran-Vac"
+            ws['D9'] = "Ran-Vac"
+            ws['E9'] = "Ran-Vac"
+            ws['F9'] = "Ran-Vac"
+            ws['G9'] = "Ran-Vac"
+            ws['H9'] = "Ran-Vac"
+            ws['I9'] = "Ran-Vac"
+            ws['J9'] = "Ran-Vac"
+            ws['K9'] = "Ran-Vac"
+            ws['L9'] = "Ran-Vac"
+        if 'Ran' in hello[9]:
+            ws['A10'] = "Ran-Vac"
+            ws['B10'] = "Ran-Vac"
+            ws['C10'] = "Ran-Vac"
+            ws['D10'] = "Ran-Vac"
+            ws['E10'] = "Ran-Vac"
+            ws['F10'] = "Ran-Vac"
+            ws['G10'] = "Ran-Vac"
+            ws['H10'] = "Ran-Vac"
+            ws['I10'] = "Ran-Vac"
+            ws['J10'] = "Ran-Vac"
+            ws['K10'] = "Ran-Vac"
+            ws['L10'] = "Ran-Vac"
+    if 'AlexVacSun' in val:
+        if 'Alex' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+    if 'AlexVacMon' in val:
+        if 'Alex' in hello[0]:
+            ws['C2'] = "Vac"
+            ws['D2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['C3'] = "Vac"
+            ws['D3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['C4'] = "Vac"
+            ws['D4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['C5'] = "Vac"
+            ws['D5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['C6'] = "Vac"
+            ws['D6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['C7'] = "Vac"
+            ws['D7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['C8'] = "Vac"
+            ws['D8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['C9'] = "Vac"
+            ws['D9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['C10'] = "Vac"
+            ws['D10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['C11'] = "Vac"
+            ws['D11'] = "Vac"
+    if 'AlexVacTue' in val:
+        if 'Alex' in hello[0]:
+            ws['E2'] = "Vac"
+            ws['F2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['E3'] = "Vac"
+            ws['F3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['E4'] = "Vac"
+            ws['F4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['E5'] = "Vac"
+            ws['F5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['E6'] = "Vac"
+            ws['F6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['E7'] = "Vac"
+            ws['F7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['E8'] = "Vac"
+            ws['F8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['E9'] = "Vac"
+            ws['F9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['E10'] = "Vac"
+            ws['F10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['E11'] = "Vac"
+            ws['F11'] = "Vac"
+    if 'AlexVacWed' in val:
+        if 'Alex' in hello[0]:
+            ws['G2'] = "Vac"
+            ws['H2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['G3'] = "Vac"
+            ws['H3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['G4'] = "Vac"
+            ws['H4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['G5'] = "Vac"
+            ws['H5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['G6'] = "Vac"
+            ws['H6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['G7'] = "Vac"
+            ws['H7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['G8'] = "Vac"
+            ws['H8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['G9'] = "Vac"
+            ws['H9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['G10'] = "Vac"
+            ws['H10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['G11'] = "Vac"
+            ws['H11'] = "Vac"
+    if 'AlexVacThu' in val:
+        if 'Alex' in hello[0]:
+            ws['I2'] = "Vac"
+            ws['j2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['I3'] = "Vac"
+            ws['j3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['I4'] = "Vac"
+            ws['j4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['I5'] = "Vac"
+            ws['j5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['I6'] = "Vac"
+            ws['j6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['I7'] = "Vac"
+            ws['j7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['I8'] = "Vac"
+            ws['j8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['I9'] = "Vac"
+            ws['j9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['I10'] = "Vac"
+            ws['j10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['I11'] = "Vac"
+            ws['j11'] = "Vac"
+    if 'AlexVacFri' in val:
+        if 'Alex' in hello[0]:
+            ws['K2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['K3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['K4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['K5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['K6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['K7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['K8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['K9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['K10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['K11'] = "Vac"
+    if 'AlexVacSat' in val:
+        if 'Alex' in hello[0]:
+            ws['L2'] = "Vac"
+        if 'Alex' in hello[1]:
+            ws['L3'] = "Vac"
+        if 'Alex' in hello[2]:
+            ws['L4'] = "Vac"
+        if 'Alex' in hello[3]:
+            ws['L5'] = "Vac"
+        if 'Alex' in hello[4]:
+            ws['L6'] = "Vac"
+        if 'Alex' in hello[5]:
+            ws['L7'] = "Vac"
+        if 'Alex' in hello[6]:
+            ws['L8'] = "Vac"
+        if 'Alex' in hello[7]:
+            ws['L9'] = "Vac"
+        if 'Alex' in hello[8]:
+            ws['L10'] = "Vac"
+        if 'Alex' in hello[9]:
+            ws['L11'] = "Vac"
+    if 'AlexVacAll' in val:
+        if 'Alex' in hello[0]:
+            ws['A2'] = "Alex-Vac"
+            ws['B2'] = "Alex-Vac"
+            ws['C2'] = "Alex-Vac"
+            ws['D2'] = "Alex-Vac"
+            ws['E2'] = "Alex-Vac"
+            ws['F2'] = "Alex-Vac"
+            ws['G2'] = "Alex-Vac"
+            ws['H2'] = "Alex-Vac"
+            ws['I2'] = "Alex-Vac"
+            ws['J2'] = "Alex-Vac"
+            ws['K2'] = "Alex-Vac"
+            ws['L2'] = "Alex-Vac"
+        if 'Alex' in hello[1]:
+            ws['A3'] = "Alex-Vac"
+            ws['B3'] = "Alex-Vac"
+            ws['C3'] = "Alex-Vac"
+            ws['D3'] = "Alex-Vac"
+            ws['E3'] = "Alex-Vac"
+            ws['F3'] = "Alex-Vac"
+            ws['G3'] = "Alex-Vac"
+            ws['H3'] = "Alex-Vac"
+            ws['I3'] = "Alex-Vac"
+            ws['J3'] = "Alex-Vac"
+            ws['K3'] = "Alex-Vac"
+            ws['L3'] = "Alex-Vac"
+        if 'Alex' in hello[2]:
+            ws['A4'] = "Alex-Vac"
+            ws['B4'] = "Alex-Vac"
+            ws['C4'] = "Alex-Vac"
+            ws['D4'] = "Alex-Vac"
+            ws['E4'] = "Alex-Vac"
+            ws['F4'] = "Alex-Vac"
+            ws['G4'] = "Alex-Vac"
+            ws['H4'] = "Alex-Vac"
+            ws['I4'] = "Alex-Vac"
+            ws['J4'] = "Alex-Vac"
+            ws['K4'] = "Alex-Vac"
+            ws['L4'] = "Alex-Vac"
+        if 'Alex' in hello[3]:
+            ws['A5'] = "Alex-Vac"
+            ws['B5'] = "Alex-Vac"
+            ws['C5'] = "Alex-Vac"
+            ws['D5'] = "Alex-Vac"
+            ws['E5'] = "Alex-Vac"
+            ws['F5'] = "Alex-Vac"
+            ws['G5'] = "Alex-Vac"
+            ws['H5'] = "Alex-Vac"
+            ws['I5'] = "Alex-Vac"
+            ws['J5'] = "Alex-Vac"
+            ws['K5'] = "Alex-Vac"
+            ws['L5'] = "Alex-Vac"
+        if 'Alex' in hello[4]:
+            ws['A6'] = "Alex-Vac"
+            ws['B6'] = "Alex-Vac"
+            ws['C6'] = "Alex-Vac"
+            ws['D6'] = "Alex-Vac"
+            ws['E6'] = "Alex-Vac"
+            ws['F6'] = "Alex-Vac"
+            ws['G6'] = "Alex-Vac"
+            ws['H6'] = "Alex-Vac"
+            ws['I6'] = "Alex-Vac"
+            ws['J6'] = "Alex-Vac"
+            ws['K6'] = "Alex-Vac"
+            ws['L6'] = "Alex-Vac"
+        if 'Alex' in hello[5]:
+            ws['A7'] = "Alex-Vac"
+            ws['B7'] = "Alex-Vac"
+            ws['C7'] = "Alex-Vac"
+            ws['D7'] = "Alex-Vac"
+            ws['E7'] = "Alex-Vac"
+            ws['F7'] = "Alex-Vac"
+            ws['G7'] = "Alex-Vac"
+            ws['H7'] = "Alex-Vac"
+            ws['I7'] = "Alex-Vac"
+            ws['J7'] = "Alex-Vac"
+            ws['K7'] = "Alex-Vac"
+            ws['L7'] = "Alex-Vac"
+        if 'Alex' in hello[6]:
+            ws['A8'] = "Alex-Vac"
+            ws['B8'] = "Alex-Vac"
+            ws['C8'] = "Alex-Vac"
+            ws['D8'] = "Alex-Vac"
+            ws['E8'] = "Alex-Vac"
+            ws['F8'] = "Alex-Vac"
+            ws['G8'] = "Alex-Vac"
+            ws['H8'] = "Alex-Vac"
+            ws['I8'] = "Alex-Vac"
+            ws['J8'] = "Alex-Vac"
+            ws['K8'] = "Alex-Vac"
+            ws['L8'] = "Alex-Vac"
+        if 'Alex' in hello[7]:
+            ws['A9'] = "Alex-Vac"
+            ws['B9'] = "Alex-Vac"
+            ws['C9'] = "Alex-Vac"
+            ws['D9'] = "Alex-Vac"
+            ws['E9'] = "Alex-Vac"
+            ws['F9'] = "Alex-Vac"
+            ws['G9'] = "Alex-Vac"
+            ws['H9'] = "Alex-Vac"
+            ws['I9'] = "Alex-Vac"
+            ws['J9'] = "Alex-Vac"
+            ws['K9'] = "Alex-Vac"
+            ws['L9'] = "Alex-Vac"
+        if 'Alex' in hello[8]:
+            ws['A9'] = "Alex-Vac"
+            ws['B9'] = "Alex-Vac"
+            ws['C9'] = "Alex-Vac"
+            ws['D9'] = "Alex-Vac"
+            ws['E9'] = "Alex-Vac"
+            ws['F9'] = "Alex-Vac"
+            ws['G9'] = "Alex-Vac"
+            ws['H9'] = "Alex-Vac"
+            ws['I9'] = "Alex-Vac"
+            ws['J9'] = "Alex-Vac"
+            ws['K9'] = "Alex-Vac"
+            ws['L9'] = "Alex-Vac"
+        if 'Alex' in hello[9]:
+            ws['A10'] = "Alex-Vac"
+            ws['B10'] = "Alex-Vac"
+            ws['C10'] = "Alex-Vac"
+            ws['D10'] = "Alex-Vac"
+            ws['E10'] = "Alex-Vac"
+            ws['F10'] = "Alex-Vac"
+            ws['G10'] = "Alex-Vac"
+            ws['H10'] = "Alex-Vac"
+            ws['I10'] = "Alex-Vac"
+            ws['J10'] = "Alex-Vac"
+            ws['K10'] = "Alex-Vac"
+            ws['L10'] = "Alex-Vac"
     # excel design
     ws['A1'].style = highlight
     ws['A2'].style = highlight
@@ -1502,167 +3437,167 @@ def block():
             temp = temp + 'Sahar All'
             print(temp)
     if (combobox_1.get()) == 'Vac':
-        #alyona vac
+        # alyona vac
         if (switchvar1.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Sun-Morning '
+            temp = temp + 'AlyonaVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Sun-Night '
+            temp = temp + 'AlyonaVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Mon-Morning '
+            temp = temp + 'AlyonaVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Mon-Night '
+            temp = temp + 'AlyonaVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Tue-Morning '
+            temp = temp + 'AlyonaVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Tue-Night '
+            temp = temp + 'AlyonaVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Wed-Morning '
+            temp = temp + 'AlyonaVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Wed-Night '
+            temp = temp + 'AlyonaVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Thu-Morning '
+            temp = temp + 'AlyonaVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Thu-Night '
+            temp = temp + 'AlyonaVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Fri-Morning '
+            temp = temp + 'AlyonaVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Alyona':
-            temp = temp + 'AlyonaVac Sat-Night '
+            temp = temp + 'AlyonaVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Alyona':
             temp = temp + 'AlyonaVac All'
             print(temp)
-        #alex vac
+        # alex vac
         if (switchvar1.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Sun-Morning '
+            temp = temp + 'AlexVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Sun-Night '
+            temp = temp + 'AlexVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Mon-Morning '
+            temp = temp + 'AlexVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Mon-Night '
+            temp = temp + 'AlexVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Tue-Morning '
+            temp = temp + 'AlexVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Tue-Night '
+            temp = temp + 'AlexVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Wed-Morning '
+            temp = temp + 'AlexVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Wed-Night '
+            temp = temp + 'AlexVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Thu-Morning '
+            temp = temp + 'AlexVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Thu-Night '
+            temp = temp + 'AlexVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Fri-Morning '
+            temp = temp + 'AlexVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Alex':
-            temp = temp + 'AlexVac Sat-Night '
+            temp = temp + 'AlexVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Alex':
             temp = temp + 'AlexVac All'
             print(temp)
-        #ofir vac
+        # ofir vac
         if (switchvar1.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Sun-Morning '
+            temp = temp + 'OfirVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Sun-Night '
+            temp = temp + 'OfirVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Mon-Morning '
+            temp = temp + 'OfirVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Mon-Night '
+            temp = temp + 'OfirVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Tue-Morning '
+            temp = temp + 'OfirVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Tue-Night '
+            temp = temp + 'OfirVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Wed-Morning '
+            temp = temp + 'OfirVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Wed-Night '
+            temp = temp + 'OfirVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Thu-Morning '
+            temp = temp + 'OfirVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Thu-Night '
+            temp = temp + 'OfirVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Fri-Morning '
+            temp = temp + 'OfirVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac Sat-Night '
+            temp = temp + 'OfirVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Ofir':
-            temp = temp + 'OfirVac All'
+            temp = temp + 'OfirVacAll'
             print(temp)
-        #yair vac
+        # yair vac
         if (switchvar1.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Sun-Morning '
+            temp = temp + 'YairVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Sun-Night '
+            temp = temp + 'YairVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Mon-Morning '
+            temp = temp + 'YairVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Mon-Night '
+            temp = temp + 'YairVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Tue-Morning '
+            temp = temp + 'YairVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Tue-Night '
+            temp = temp + 'YairVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Wed-Morning '
+            temp = temp + 'YairVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Wed-Night '
+            temp = temp + 'YairVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Thu-Morning '
+            temp = temp + 'YairVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Thu-Night '
+            temp = temp + 'YairVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Fri-Morning '
+            temp = temp + 'YairVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac Sat-Night '
+            temp = temp + 'YairVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Yair':
-            temp = temp + 'YairVac All'
+            temp = temp + 'YairVacAll'
             print(temp)
-        #Almog vac
+        # Almog vac
         if (switchvar1.get()) == 1 and operator == 'Almog':
             temp = temp + 'AlmogVacSun '
             print(temp)
@@ -1702,85 +3637,85 @@ def block():
         if (selectvar.get()) == 1 and operator == 'Almog':
             temp = temp + 'AlmogVacAll '
             print(temp)
-        #Ran vac
+        # Ran vac
         if (switchvar1.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Sun-Morning '
+            temp = temp + 'RanVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Sun-Night '
+            temp = temp + 'RanVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Mon-Morning '
+            temp = temp + 'RanVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Mon-Night '
+            temp = temp + 'RanVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Tue-Morning '
+            temp = temp + 'RanVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Tue-Night '
+            temp = temp + 'RanVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Wed-Morning '
+            temp = temp + 'RanVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Wed-Night '
+            temp = temp + 'RanVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Thu-Morning '
+            temp = temp + 'RanVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Thu-Night '
+            temp = temp + 'RanVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Fri-Morning '
+            temp = temp + 'RanVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac Sat-Night '
+            temp = temp + 'RanVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Ran':
-            temp = temp + 'RanVac All'
+            temp = temp + 'RanVacAll'
             print(temp)
-        #Sahar vac
+        # Sahar vac
         if (switchvar1.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Sun-Morning '
+            temp = temp + 'SaharVacSun '
             print(temp)
         if (switchvar2.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Sun-Night '
+            temp = temp + 'SaharVacSun '
             print(temp)
         if (switchvar3.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Mon-Morning '
+            temp = temp + 'SaharVacMon '
             print(temp)
         if (switchvar4.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Mon-Night '
+            temp = temp + 'SaharVacMon '
             print(temp)
         if (switchvar5.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Tue-Morning '
+            temp = temp + 'SaharVacTue '
             print(temp)
         if (switchvar6.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Tue-Night '
+            temp = temp + 'SaharVacTue '
             print(temp)
         if (switchvar7.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Wed-Morning '
+            temp = temp + 'SaharVacWed '
             print(temp)
         if (switchvar8.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Wed-Night '
+            temp = temp + 'SaharVacWed '
             print(temp)
         if (switchvar9.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Thu-Morning '
+            temp = temp + 'SaharVacThu '
             print(temp)
         if (switchvar10.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Thu-Night '
+            temp = temp + 'SaharVacThu '
             print(temp)
         if (switchvar11.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Fri-Morning '
+            temp = temp + 'SaharVacFri '
             print(temp)
         if (switchvar12.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac Sat-Night '
+            temp = temp + 'SaharVacSat '
             print(temp)
         if (selectvar.get()) == 1 and operator == 'Sahar':
-            temp = temp + 'SaharVac All'
+            temp = temp + 'SaharVacAll'
             print(temp)
 
 
