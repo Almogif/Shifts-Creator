@@ -105,6 +105,8 @@ def check():
 
     # Alyona check
         #DAY
+    if "Alyona All" in val:
+        Alyona = Alyona + "ABCDEFGHIJ"
     if "Alyona Sun-Morning" in val:
         Alyona = Alyona + "ABCD"
     if "Alyona Mon-Morning" in val:
@@ -761,8 +763,9 @@ def button_callback2():
 
 
 def design():
+    global val
+    global hello
     # excel write
-    ws['A40'] = ("history")
     ws['A40'].style = highlight
     ws['A2'] = (hello[0])
     ws['A3'] = (hello[1])
@@ -814,6 +817,42 @@ def design():
     ws['K9'] = (hello[7])
     ws['L10'] = (hello[8])
     ws['K11'] = (hello[9])
+
+    print(hello)
+    print(val)
+    if 'AlmogVacSun' in val:
+        if 'Almog' in hello[0]:
+            ws['A2'] = "Vac"
+            ws['B2'] = "Vac"
+        if 'Almog' in hello[1]:
+            ws['A3'] = "Vac"
+            ws['B3'] = "Vac"
+        if 'Almog' in hello[2]:
+            ws['A4'] = "Vac"
+            ws['B4'] = "Vac"
+        if 'Almog' in hello[3]:
+            ws['A5'] = "Vac"
+            ws['B5'] = "Vac"
+        if 'Almog' in hello[4]:
+            ws['A6'] = "Vac"
+            ws['B6'] = "Vac"
+        if 'Almog' in hello[5]:
+            ws['A7'] = "Vac"
+            ws['B7'] = "Vac"
+        if 'Almog' in hello[6]:
+            ws['A8'] = "Vac"
+            ws['B8'] = "Vac"
+        if 'Almog' in hello[7]:
+            ws['A9'] = "Vac"
+            ws['B9'] = "Vac"
+        if 'Almog' in hello[8]:
+            ws['A10'] = "Vac"
+            ws['B10'] = "Vac"
+        if 'Almog' in hello[9]:
+            ws['A11'] = "Vac"
+            ws['B11'] = "Vac"
+
+
     # excel design
     ws['A1'].style = highlight
     ws['A2'].style = highlight
@@ -1179,14 +1218,608 @@ def block():
     global val
     temp = " "
     operator = optionmenu_1.get()
-    global val
-    if (switchvar1.get()) == 1 and operator == 'Alyona':
-        temp = temp + 'Alyona Sun-Morning '
-        print(temp)
-    if (switchvar2.get()) == 1 and operator == 'Alyona':
-        temp = temp + 'Alyona Sun-Night '
-        print(temp)
+    if (combobox_1.get()) == 'Block':
+        #alyona block
+        if (switchvar1.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'Alyona All'
+            print(temp)
+        #alex block
+        if (switchvar1.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Alex':
+            temp = temp + 'Alex All'
+            print(temp)
+        #ofir block
+        if (switchvar1.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'Ofir All'
+            print(temp)
+        #yair block
+        if (switchvar1.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Yair':
+            temp = temp + 'Yair All'
+            print(temp)
+        #Almog block
 
+        if (switchvar1.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Almog':
+            temp = temp + 'Almog All'
+            print(temp)
+        #ran block
+
+        if (switchvar1.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Ran':
+            temp = temp + 'Ran All'
+            print(temp)
+        #sahar block
+        if (switchvar1.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'Sahar All'
+            print(temp)
+    if (combobox_1.get()) == 'Vac':
+        #alyona vac
+        if (switchvar1.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Alyona':
+            temp = temp + 'AlyonaVac All'
+            print(temp)
+        #alex vac
+        if (switchvar1.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Alex':
+            temp = temp + 'AlexVac All'
+            print(temp)
+        #ofir vac
+        if (switchvar1.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Ofir':
+            temp = temp + 'OfirVac All'
+            print(temp)
+        #yair vac
+        if (switchvar1.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Yair':
+            temp = temp + 'YairVac All'
+            print(temp)
+        #Almog vac
+        if (switchvar1.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacSun '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacSun'
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacMon '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacMon '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacTue '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacTue '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacWed '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacWed '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacThu '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacThu '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacFri '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacSat '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Almog':
+            temp = temp + 'AlmogVacAll '
+            print(temp)
+        #Ran vac
+        if (switchvar1.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Ran':
+            temp = temp + 'RanVac All'
+            print(temp)
+        #Sahar vac
+        if (switchvar1.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Sun-Morning '
+            print(temp)
+        if (switchvar2.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Sun-Night '
+            print(temp)
+        if (switchvar3.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Mon-Morning '
+            print(temp)
+        if (switchvar4.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Mon-Night '
+            print(temp)
+        if (switchvar5.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Tue-Morning '
+            print(temp)
+        if (switchvar6.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Tue-Night '
+            print(temp)
+        if (switchvar7.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Wed-Morning '
+            print(temp)
+        if (switchvar8.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Wed-Night '
+            print(temp)
+        if (switchvar9.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Thu-Morning '
+            print(temp)
+        if (switchvar10.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Thu-Night '
+            print(temp)
+        if (switchvar11.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Fri-Morning '
+            print(temp)
+        if (switchvar12.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac Sat-Night '
+            print(temp)
+        if (selectvar.get()) == 1 and operator == 'Sahar':
+            temp = temp + 'SaharVac All'
+            print(temp)
+
+
+# def Vac():
+#     global val
+#     global hello
+#     print(hello)
+#     print(val)
+#     if 'AlmogVac Sun' in val:
+#         if 'Almog' in hello[0]:
+#             ws['A2'] = "Vac"
+#             ws['B2'] = "Vac"
+#         if 'Almog' in hello[1]:
+#             ws['A3'] = "Vac"
+#             ws['B3'] = "Vac"
+#         if 'Almog' in hello[2]:
+#             ws['A4'] = "Vac"
+#             ws['B4'] = "Vac"
+#         if 'Almog' in hello[3]:
+#             ws['A5'] = "Vac"
+#             ws['B5'] = "Vac"
+#         if 'Almog' in hello[4]:
+#             ws['A6'] = "Vac"
+#             ws['B6'] = "Vac"
+#         if 'Almog' in hello[5]:
+#             ws['A7'] = "Vac"
+#             ws['B7'] = "Vac"
+#         if 'Almog' in hello[6]:
+#             ws['A8'] = "Vac"
+#             ws['B8'] = "Vac"
+#         if 'Almog' in hello[7]:
+#             ws['A9'] = "Vac"
+#             ws['B9'] = "Vac"
+#         if 'Almog' in hello[8]:
+#             ws['A10'] = "Vac"
+#             ws['B10'] = "Vac"
+#         if 'Almog' in hello[9]:
+#             ws['A11'] = "Vac"
+#             ws['B11'] = "Vac"
 
 
 
@@ -1287,7 +1920,18 @@ optionmenu_1.set("Alyona")
 # radio_var = tkinter.IntVar()
 #
 # radio_button_1 = customtkinter.CTkRadioButton(master=frame_1,
-#                                                            variable=radio_var)
+#
+#
+#                                                           variable=radio_var)
+combobox_1 = customtkinter.CTkComboBox(frame_1, values=["Block","Vac"])
+combobox_1.grid(sticky = W,row = 2, column = 0,pady=12, padx=10)
+
+selectvar = IntVar()
+
+
+switch_13 = customtkinter.CTkSwitch(master=frame_1,text="Select All", command=block, variable=selectvar,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 2,column = 1,pady=9, padx=8)
+
 switchvar1 = IntVar()
 switchvar2 = IntVar()
 switchvar3 = IntVar()
@@ -1300,46 +1944,46 @@ switchvar9 = IntVar()
 switchvar10 = IntVar()
 switchvar11 = IntVar()
 switchvar12 = IntVar()
-selectvar = IntVar()
+
+
 
 switch_1 = customtkinter.CTkSwitch(master=frame_1,text="Sun-Morning", command=block, variable=switchvar1,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 2, column = 0, pady=8, padx=8)
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 3, column = 0, pady=8, padx=8)
 
 switch_2 = customtkinter.CTkSwitch(master=frame_1,text="Sun-Night", command=block, variable=switchvar2,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 2, column = 1,pady=8, padx=8)
-
-switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Morning", command=block, variable=switchvar3,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 3, column = 0,pady=8, padx=8)
-
-switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Night", command=block, variable=switchvar4,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 3, column = 1,pady=8, padx=8)
 
-switch_4 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Morning", command=block, variable=switchvar8,
+switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Morning", command=block, variable=switchvar3,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 0,pady=8, padx=8)
 
-switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Night", command=block, variable=switchvar6,
+switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Night", command=block, variable=switchvar4,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 1,pady=8, padx=8)
 
-switch_7 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Morning", command=block, variable=switchvar7,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 0,pady=8, padx=8)
-
-switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Night", command=block, variable=switchvar8,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 1,pady=8, padx=8)
-
-switch_9 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Morning", command=block, variable=switchvar9,
+switch_4 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Morning", command=block, variable=switchvar5,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 0,pady=8, padx=8)
 
-switch_10 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Night", command=block, variable=switchvar10,
+switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Night", command=block, variable=switchvar6,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 1,pady=8, padx=8)
 
-switch_11 = customtkinter.CTkSwitch(master=frame_1,text="Fri-Morning", command=block, variable=switchvar11,
+switch_7 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Morning", command=block, variable=switchvar7,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 6, column = 0,pady=8, padx=8)
 
-switch_12 = customtkinter.CTkSwitch(master=frame_1,text="Sat-Night", command=block, variable=switchvar12,
-                                                 onvalue=1, offvalue=0).grid(sticky = W, row = 6, column = 1,pady=8, padx=8)
+switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Night", command=block, variable=switchvar8,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 6, column = 1,pady=8, padx=8)
 
-switch_13 = customtkinter.CTkSwitch(master=frame_1,text="Select All", command=block, variable=selectvar,
-                                                 onvalue=1, offvalue=0).grid(sticky = W,pady=8, padx=8)
+switch_9 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Morning", command=block, variable=switchvar9,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 7, column = 0,pady=8, padx=8)
+
+switch_10 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Night", command=block, variable=switchvar10,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 7, column = 1,pady=8, padx=8)
+
+switch_11 = customtkinter.CTkSwitch(master=frame_1,text="Fri-Morning", command=block, variable=switchvar11,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 8, column = 0,pady=8, padx=8)
+
+switch_12 = customtkinter.CTkSwitch(master=frame_1,text="Sat-Night", command=block, variable=switchvar12,
+                                                 onvalue=1, offvalue=0).grid(sticky = W, row = 8, column = 1,pady=8, padx=8)
+
+
 
 
 
@@ -1357,10 +2001,7 @@ switch_13 = customtkinter.CTkSwitch(master=frame_1,text="Select All", command=bl
 # Radiobutton(frame_1, text='text', variable=v,
 #             value=0).grid(side=TOP, ipady=5)
 
-# combobox_1 = customtkinter.CTkComboBox(frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning", "Wed-Morning",
-#                                                         "Thu-Morning", "Fri-Morning", "Sun-Night", "Mon-Night",
-#                                                         "Tue-Night", "Wed-Night", "Thu-Night", "Sat-Night"])
-# combobox_1.grid(pady=12, padx=10)
+
 # combobox_1.set("Sun-Morning")
 
 button_1 = customtkinter.CTkButton(master=frame_1, text="save", command=button_save)
