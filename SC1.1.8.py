@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import *
 import customtkinter
 import random
 from openpyxl import Workbook
@@ -48,6 +49,7 @@ wb.add_named_style(highlight)
 ws.append(['Sun-Day', 'Sun-Night', 'Mon-Day', 'Mon-Night', 'Tue-Day', 'Tue-Night', 'Wed-Day', 'Wed-Night', 'Thu-Day',
            'Thu-Night', 'Fri-Day', 'Sat-Night'])
 
+flag = 0
 val = ""
 Alyona = ""
 Alex = ""
@@ -83,12 +85,12 @@ count = 0
 s = 0
 
 
-def button_callback():
-    global val
-    val = (" " + val + (optionmenu_1.get()) + " " + (combobox_1.get()) + " ")
-    label_2 = customtkinter.CTkLabel(master=frame_1,
-                                     text=" " + (optionmenu_1.get()) + " can not work on " + (combobox_1.get()) + " ")
-    label_2.pack(pady=1, padx=1)
+# def button_callback():
+#     global val
+#     val = (" " + val + (optionmenu_1.get()) + " " + (combobox_1.get()) + " ")
+#     label_2 = customtkinter.CTkLabel(master=frame_1,
+#                                      text=" " + (optionmenu_1.get()) + " can not work on " + (combobox_1.get()) + " ")
+#     label_2.grid(pady=1, padx=1)
 
 
 def check():
@@ -1100,7 +1102,7 @@ def button_clear():
     # Pavel_fr = 0
 
     label_5 = customtkinter.CTkLabel(master=frame_1, text=("You have clear all request"))
-    label_5.pack(pady=1, padx=1)
+    label_5.grid(pady=1, padx=1)
 
 
 def his():
@@ -1169,10 +1171,31 @@ def get_data():
             #     Pavel_fr = Pavel_fr + 1
 
 
+def sel():
+    print()
+
+def block():
+    global temp
+    global val
+    temp = " "
+    operator = optionmenu_1.get()
+    global val
+    if (switchvar1.get()) == 1 and operator == 'Alyona':
+        temp = temp + 'Alyona Sun-Morning '
+        print(temp)
+    if (switchvar2.get()) == 1 and operator == 'Alyona':
+        temp = temp + 'Alyona Sun-Night '
+        print(temp)
 
 
 
 
+
+def button_save():
+    global temp
+    global val
+    val = val + temp
+    print(val)
 
 
 def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
@@ -1249,34 +1272,112 @@ def append_df_to_excel(filename, df, sheet_name='Sheet1', startrow=None,
 
 
 frame_1 = customtkinter.CTkFrame(master=app)
-frame_1.pack(pady=60, padx=60, fill="both", expand=True)
+frame_1.grid(pady=60, padx=60)
 
 label_1 = customtkinter.CTkLabel(master=frame_1, text="Shifts Creator", justify=tkinter.LEFT)
-label_1.pack(pady=12, padx=10)
+label_1.grid(row = 0, column = 0, pady=12, padx=10)
 
 
 
 optionmenu_1 = customtkinter.CTkOptionMenu(frame_1,
                                            values=["Alyona", "Alex", "Ofir", "Yair", "Almog", "Ran", "Sahar"])
-optionmenu_1.pack(pady=12, padx=10)
+optionmenu_1.grid(row = 1, column = 0, pady=12, padx=10)
 optionmenu_1.set("Alyona")
 
-combobox_1 = customtkinter.CTkComboBox(frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning", "Wed-Morning",
-                                                        "Thu-Morning", "Fri-Morning", "Sun-Night", "Mon-Night",
-                                                        "Tue-Night", "Wed-Night", "Thu-Night", "Sat-Night"])
-combobox_1.pack(pady=12, padx=10)
-combobox_1.set("Sun-Morning")
+# radio_var = tkinter.IntVar()
+#
+# radio_button_1 = customtkinter.CTkRadioButton(master=frame_1,
+#                                                            variable=radio_var)
+switchvar1 = IntVar()
+switchvar2 = IntVar()
+switchvar3 = IntVar()
+switchvar4 = IntVar()
+switchvar5 = IntVar()
+switchvar6 = IntVar()
+switchvar7 = IntVar()
+switchvar8 = IntVar()
+switchvar9 = IntVar()
+switchvar10 = IntVar()
+switchvar11 = IntVar()
+switchvar12 = IntVar()
+selectvar = IntVar()
 
-button_1 = customtkinter.CTkButton(master=frame_1, text="save", command=button_callback)
-button_1.pack(pady=12, padx=10)
+switch_1 = customtkinter.CTkSwitch(master=frame_1,text="Sun-Morning", command=block, variable=switchvar1,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 2, column = 0, pady=8, padx=8)
+
+switch_2 = customtkinter.CTkSwitch(master=frame_1,text="Sun-Night", command=block, variable=switchvar2,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 2, column = 1,pady=8, padx=8)
+
+switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Morning", command=block, variable=switchvar3,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 3, column = 0,pady=8, padx=8)
+
+switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Night", command=block, variable=switchvar4,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 3, column = 1,pady=8, padx=8)
+
+switch_4 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Morning", command=block, variable=switchvar8,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 0,pady=8, padx=8)
+
+switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Night", command=block, variable=switchvar6,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 1,pady=8, padx=8)
+
+switch_7 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Morning", command=block, variable=switchvar7,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 0,pady=8, padx=8)
+
+switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Night", command=block, variable=switchvar8,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 1,pady=8, padx=8)
+
+switch_9 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Morning", command=block, variable=switchvar9,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 0,pady=8, padx=8)
+
+switch_10 = customtkinter.CTkSwitch(master=frame_1,text="Thu-Night", command=block, variable=switchvar10,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 1,pady=8, padx=8)
+
+switch_11 = customtkinter.CTkSwitch(master=frame_1,text="Fri-Morning", command=block, variable=switchvar11,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,row = 6, column = 0,pady=8, padx=8)
+
+switch_12 = customtkinter.CTkSwitch(master=frame_1,text="Sat-Night", command=block, variable=switchvar12,
+                                                 onvalue=1, offvalue=0).grid(sticky = W, row = 6, column = 1,pady=8, padx=8)
+
+switch_13 = customtkinter.CTkSwitch(master=frame_1,text="Select All", command=block, variable=selectvar,
+                                                 onvalue=1, offvalue=0).grid(sticky = W,pady=8, padx=8)
+
+
+
+
+# radio_button_1.grid(pady=12, padx=10)
+#
+# radio_button_1.select()
+
+# v = StringVar(frame_1, "1")
+#
+# style = Style(frame_1)
+# style.configure("TRadiobutton", background="gray",
+#                 foreground="light blue", font=("arial", 10, "bold"))
+#
+# Radiobutton(frame_1, text='text', variable=v,
+#             value=0).grid(side=TOP, ipady=5)
+
+# combobox_1 = customtkinter.CTkComboBox(frame_1, values=["Sun-Morning", "Mon-Morning", "Tue-Morning", "Wed-Morning",
+#                                                         "Thu-Morning", "Fri-Morning", "Sun-Night", "Mon-Night",
+#                                                         "Tue-Night", "Wed-Night", "Thu-Night", "Sat-Night"])
+# combobox_1.grid(pady=12, padx=10)
+# combobox_1.set("Sun-Morning")
+
+button_1 = customtkinter.CTkButton(master=frame_1, text="save", command=button_save)
+button_1.grid(pady=12, padx=10)
 
 button_2 = customtkinter.CTkButton(master=frame_1, text="finished", command=button_callback2)
-button_2.pack(pady=12, padx=10)
+button_2.grid(pady=12, padx=10)
 
-button_3 = customtkinter.CTkButton(master=frame_1, text="Clear all", command=button_clear)
-button_3.pack(pady=10, padx=8)
+# button_3 = customtkinter.CTkButton(master=frame_1, text="Clear all", command=button_clear)
+# button_3.grid(pady=10, padx=8)
 
 label_3 = customtkinter.CTkLabel(master=frame_1, text="Shifts blocked:", justify=tkinter.LEFT)
-label_3.pack(pady=5, padx=3)
+label_3.grid(pady=5, padx=3)
+
+
+
+
+
 
 app.mainloop()
