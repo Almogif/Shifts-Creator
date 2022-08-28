@@ -356,9 +356,11 @@ def button_callback2():
     global Almog_fr
     global Ran_fr
     global Sahar_fr
+    get_data()
 
     fr = [Alyona_fr, Alex_fr, Ofir_fr, Almog_fr,  Yair_fr, Sahar_fr, Ran_fr]
     st = [Alyona_st, Alex_st, Ofir_st, Almog_st,  Yair_st, Sahar_st, Ran_st]
+    print(Alyona_st, Alex_st, Ofir_st, Almog_st,  Yair_st, Sahar_st, Ran_st)
 
     # after get from input which shifts each ops can not work, tRansform the data to format 'X = (can not work) ABC..'
     check()
@@ -374,41 +376,42 @@ def button_callback2():
           "ThursdayN:", ThursdayN ,"\n",
           "FridayM:", FridayM ,"\n",
           "SaturdayN:", SaturdayN) ,"\n"
-
     #sunday
     global newSat
+    print("sat min", min(st))
     for i in range(0,3):
         if len(SaturdayN) >= 2:
-            if (Alyona_st <= min(st) + i) and ("Alyona" in SaturdayN):
-                NewSat = "Alyona"
-            elif (Ofir_st <= min(st) + i) and ("Ofir" in SaturdayN):
-                NewSat = "Ofir"
-            elif (Yair_st <= min(st) + i) and ("Yair" in SaturdayN):
-                NewSat = "Yair"
-            elif (Sahar_st <= min(st) + i) and ("Sahar" in SaturdayN):
-                NewSat = "Sahar"
-            elif (Alex_st <= min(st) + i) and ("Alex" in SaturdayN):
-                NewSat = "Alex"
-            elif (Ran_st <= min(st) + i) and ("Ran" in SaturdayN):
-                NewSat = "Ran"
-            elif (Almog_st <= min(st) + i) and ("Almog" in SaturdayN):
-                NewSat = "Almog"
+            if (Alyona_st == min(st) + i) and ("Alyona" in SaturdayN):
+                NewSat = "Alyona "
+            elif (Ofir_st == min(st) + i) and ("Ofir" in SaturdayN):
+                NewSat = "Ofir "
+            elif (Yair_st == min(st) + i) and ("Yair" in SaturdayN):
+                NewSat = "Yair "
+            elif (Sahar_st == min(st) + i) and ("Sahar" in SaturdayN):
+                NewSat = "Sahar "
+            elif (Alex_st == min(st) + i) and ("Alex" in SaturdayN):
+                NewSat = "Alex "
+            elif (Ran_st == min(st) + i) and ("Ran" in SaturdayN):
+                NewSat = "Ran "
+            elif (Almog_st == min(st) + i) and ("Almog" in SaturdayN):
+                NewSat = "Almog "
         if len(SaturdayN) >= 2:
-            if (Alyona_st <= min(st) + i) and ("Alyona" in SaturdayN) and (not "Alyona" in NewSat):
-                NewSat[1] = "Alyona"
-            elif (Ofir_st <= min(st) + i) and ("Ofir" in SaturdayN) and (not "Ofir" in NewSat):
-                NewSat[1] = "Ofir"
-            elif (Yair_st <= min(st) + i) and ("Yair" in SaturdayN) and (not "Yair" in NewSat):
-                NewSat[1] = "Yair"
-            elif (Sahar_st <= min(st) + i) and ("Sahar" in SaturdayN) and (not "Sahar" in NewSat):
-                NewSat[1] = "Sahar"
-            elif (Alex_st <= min(st) + i) and ("Alex" in SaturdayN) and (not "Alex" in NewSat):
-                NewSat[1] = "Alex"
-            elif (Ran_st <= min(st) + i) and ("Ran" in SaturdayN) and (not "Ran" in NewSat):
-                NewSat[1] = "Ran"
-            elif (Almog_st <= min(st) + i) and ("Almog" in SaturdayN) and (not "Almog" in NewSat):
-                NewSat[1] = "Almog"
-
+            if (Alyona_st == min(st) + i) and ("Alyona" in SaturdayN) and (not "Alyona" in NewSat):
+                NewSat = NewSat + "Alyona"
+            elif (Ofir_st == min(st) + i) and ("Ofir" in SaturdayN) and (not "Ofir" in NewSat):
+                NewSat = NewSat + "Ofir"
+            elif (Yair_st == min(st) + i) and ("Yair" in SaturdayN) and (not "Yair" in NewSat):
+                NewSat = NewSat + "Yair"
+            elif (Sahar_st == min(st) + i) and ("Sahar" in SaturdayN) and (not "Sahar" in NewSat):
+                NewSat = NewSat + "Sahar"
+            elif (Alex_st == min(st) + i) and ("Alex" in SaturdayN) and (not "Alex" in NewSat):
+                NewSat = NewSat + "Alex"
+            elif (Ran_st == min(st) + i) and ("Ran" in SaturdayN) and (not "Ran" in NewSat):
+                NewSat = NewSat + "Ran"
+            elif (Almog_st == min(st) + i) and ("Almog" in SaturdayN) and (not "Almog" in NewSat):
+                NewSat = NewSat + "Almog"
+    NewSat.split()
+    print("NewSat: ", NewSat)
 
 
     if len(SundayN) >= 3:
