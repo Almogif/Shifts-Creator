@@ -3,12 +3,11 @@ from tkinter import *
 import customtkinter
 import random
 from openpyxl import Workbook
-from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Font, GradientFill
+from openpyxl.styles import PatternFill, Alignment, GradientFill
 from openpyxl.styles import NamedStyle, Font, Border, Side
 from openpyxl import load_workbook
 import pandas as pd
 import os
-from pathlib import Path
 
 highlight = NamedStyle(name="highlight")
 bd = Side(style='thin', color="000000")
@@ -79,9 +78,8 @@ ThursdayM =""
 ThursdayN =""
 FridayM =""
 SaturdayN =""
-# Pavel_st = 0
-# Pavel_fr = 0
 NewSat = ""
+NewFr = ""
 
 i = 0
 count = 0
@@ -109,180 +107,180 @@ def check():
     global FridayM
     global SaturdayN
     block()
-    if not "Alyona All" in val:
-        if not "Alyona Sun-Morning" in val:
+    if "Alyona All" not in val:
+        if "Alyona Sun-Morning" not in val:
             SundayM = SundayM + "Alyona "
-        if not  "Alyona Mon-Morning" in val:
+        if "Alyona Mon-Morning" not in val:
             MondayM = MondayM + "Alyona "
-        if not "Alyona Tue-Morning" in val:
+        if "Alyona Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Alyona "
-        if not "Alyona Wed-Morning" in val:
+        if "Alyona Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Alyona "
-        if not "Alyona Thu-Morning" in val:
+        if "Alyona Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Alyona "
-        if not "Alyona Fri-Morning " in val:
+        if "Alyona Fri-Morning " not in val:
             FridayM = FridayM + "Alyona "
-        if not "Alyona Sun-Night" in val:
+        if "Alyona Sun-Night" not in val:
             SundayN = SundayN + "Alyona "
-        if not "Alyona Mon-Night" in val:
+        if "Alyona Mon-Night" not in val:
             MondayN = MondayN + "Alyona "
-        if not "Alyona Tue-Night" in val:
+        if "Alyona Tue-Night" not in val:
             TuesdayN = TuesdayN + "Alyona "
-        if not "Alyona Wed-Night" in val:
+        if "Alyona Wed-Night" not in val:
             WednesdayN = WednesdayN + "Alyona "
-        if not "Alyona Thu-Night" in val:
+        if "Alyona Thu-Night" not in val:
             ThursdayN = ThursdayN + "Alyona "
-        if not "Alyona Sat-Night " in val:
+        if "Alyona Sat-Night " not in val:
             SaturdayN = SaturdayN + "Alyona "
-    if not "Alex All" in val:
-        if not "Alex Sun-Morning" in val:
+    if "Alex All" not in val:
+        if "Alex Sun-Morning" not in val:
             SundayM = SundayM + "Alex "
-        if not "Alex Mon-Morning" in val:
+        if "Alex Mon-Morning" not in val:
             MondayM = MondayM + "Alex "
-        if not "Alex Tue-Morning" in val:
+        if "Alex Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Alex "
-        if not "Alex Wed-Morning" in val:
+        if "Alex Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Alex "
-        if not "Alex Thu-Morning" in val:
+        if "Alex Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Alex "
-        if not "Alex Fri-Morning " in val:
+        if "Alex Fri-Morning " not in val:
             FridayM = FridayM + "Alex "
-        if not "Alex Sun-Night" in val:
+        if "Alex Sun-Night" not in val:
             SundayN = SundayN + "Alex "
-        if not "Alex Mon-Night" in val:
+        if "Alex Mon-Night" not in val:
             MondayN = MondayN + "Alex "
-        if not "Alex Tue-Night" in val:
+        if "Alex Tue-Night" not in val:
             TuesdayN = TuesdayN + "Alex "
-        if not "Alex Wed-Night" in val:
+        if "Alex Wed-Night" not in val:
             WednesdayN = WednesdayN + "Alex "
-        if not "Alex Thu-Night" in val:
+        if "Alex Thu-Night" not in val:
             ThursdayN = ThursdayN + "Alex "
-        if not "Alex Sat-Night " in val:
+        if "Alex Sat-Night " not in val:
             SaturdayN = SaturdayN + "Alex "
-    if not "Ofir All" in val:
-        if not "Ofir Sun-Morning" in val:
+    if "Ofir All" not in val:
+        if "Ofir Sun-Morning" not in val:
             SundayM = SundayM + "Ofir "
-        if not "Ofir Mon-Morning" in val:
+        if "Ofir Mon-Morning" not in val:
             MondayM = MondayM + "Ofir "
-        if not "Ofir Tue-Morning" in val:
+        if "Ofir Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Ofir "
-        if not "Ofir Wed-Morning" in val:
+        if "Ofir Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Ofir "
-        if not "Ofir Thu-Morning" in val:
+        if "Ofir Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Ofir "
-        if not "Ofir Fri-Morning " in val:
+        if "Ofir Fri-Morning " not in val:
             FridayM = FridayM + "Ofir "
-        if not "Ofir Sun-Night" in val:
+        if "Ofir Sun-Night" not in val:
             SundayN = SundayN + "Ofir "
-        if not "Ofir Mon-Night" in val:
+        if "Ofir Mon-Night" not in val:
             MondayN = MondayN + "Ofir "
-        if not "Ofir Tue-Night" in val:
+        if "Ofir Tue-Night" not in val:
             TuesdayN = TuesdayN + "Ofir "
-        if not "Ofir Wed-Night" in val:
+        if "Ofir Wed-Night" not in val:
             WednesdayN = WednesdayN + "Ofir "
-        if not "Ofir Thu-Night" in val:
+        if "Ofir Thu-Night" not in val:
             ThursdayN = ThursdayN + "Ofir "
-        if not "Ofir Sat-Night " in val:
+        if "Ofir Sat-Night " not in val:
             SaturdayN = SaturdayN + "Ofir "
-    if not "Almog All" in val:
-        if not "Almog Sun-Morning" in val:
+    if "Almog All" not in val:
+        if "Almog Sun-Morning" not in val:
             SundayM = SundayM + "Almog "
-        if not "Almog Mon-Morning" in val:
+        if "Almog Mon-Morning" not in val:
             MondayM = MondayM + "Almog "
-        if not "Almog Tue-Morning" in val:
+        if "Almog Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Almog "
-        if not "Almog Wed-Morning" in val:
+        if "Almog Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Almog "
-        if not "Almog Thu-Morning" in val:
+        if "Almog Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Almog "
-        if not "Almog Fri-Morning " in val:
+        if "Almog Fri-Morning " not in val:
             FridayM = FridayM + "Almog "
-        if not "Almog Sun-Night" in val:
+        if "Almog Sun-Night" not in val:
             SundayN = SundayN + "Almog "
-        if not "Almog Mon-Night" in val:
+        if "Almog Mon-Night" not in val:
             MondayN = MondayN + "Almog "
-        if not "Almog Tue-Night" in val:
+        if "Almog Tue-Night" not in val:
             TuesdayN = TuesdayN + "Almog "
-        if not "Almog Wed-Night" in val:
+        if "Almog Wed-Night" not in val:
             WednesdayN = WednesdayN + "Almog "
-        if not "Almog Thu-Night" in val:
+        if "Almog Thu-Night" not in val:
             ThursdayN = ThursdayN + "Almog "
-        if not "Almog Sat-Night " in val:
+        if "Almog Sat-Night " not in val:
             SaturdayN = SaturdayN + "Almog "
-    if not "Ran All" in val:
-        if not "Ran Sun-Morning" in val:
+    if "Ran All" not in val:
+        if "Ran Sun-Morning" not in val:
             SundayM = SundayM + "Ran "
-        if not "Ran Mon-Morning" in val:
+        if "Ran Mon-Morning" not in val:
             MondayM = MondayM + "Ran "
-        if not "Ran Tue-Morning" in val:
+        if "Ran Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Ran "
-        if not "Ran Wed-Morning" in val:
+        if "Ran Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Ran "
-        if not "Ran Thu-Morning" in val:
+        if "Ran Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Ran "
-        if not "Ran Fri-Morning " in val:
+        if "Ran Fri-Morning " not in val:
             FridayM = FridayM + "Ran "
-        if not "Ran Sun-Night" in val:
+        if "Ran Sun-Night" not in val:
             SundayN = SundayN + "Ran "
-        if not "Ran Mon-Night" in val:
+        if "Ran Mon-Night" not in val:
             MondayN = MondayN + "Ran "
-        if not "Ran Tue-Night" in val:
+        if "Ran Tue-Night" not in val:
             TuesdayN = TuesdayN + "Ran "
-        if not "Ran Wed-Night" in val:
+        if "Ran Wed-Night" not in val:
             WednesdayN = WednesdayN + "Ran "
-        if not "Ran Thu-Night" in val:
+        if "Ran Thu-Night" not in val:
             ThursdayN = ThursdayN + "Ran "
-        if not "Ran Sat-Night " in val:
+        if "Ran Sat-Night " not in val:
             SaturdayN = SaturdayN + "Ran "
-    if not "Sahar All" in val:
-        if not "Sahar Sun-Morning" in val:
+    if "Sahar All" not in val:
+        if "Sahar Sun-Morning" not in val:
             SundayM = SundayM + "Sahar "
-        if not "Sahar Mon-Morning" in val:
+        if "Sahar Mon-Morning" not in val:
             MondayM = MondayM + "Sahar "
-        if not "Sahar Tue-Morning" in val:
+        if "Sahar Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Sahar "
-        if not "Sahar Wed-Morning" in val:
+        if "Sahar Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Sahar "
-        if not "Sahar Thu-Morning" in val:
+        if "Sahar Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Sahar "
-        if not "Sahar Fri-Morning " in val:
+        if "Sahar Fri-Morning " not in val:
             FridayM = FridayM + "Sahar "
-        if not "Sahar Sun-Night" in val:
+        if "Sahar Sun-Night" not in val:
             SundayN = SundayN + "Sahar "
-        if not "Sahar Mon-Night" in val:
+        if "Sahar Mon-Night" not in val:
             MondayN = MondayN + "Sahar "
-        if not "Sahar Tue-Night" in val:
+        if "Sahar Tue-Night" not in val:
             TuesdayN = TuesdayN + "Sahar "
-        if not "Sahar Wed-Night" in val:
+        if "Sahar Wed-Night" not in val:
             WednesdayN = WednesdayN + "Sahar "
-        if not "Sahar Thu-Night" in val:
+        if "Sahar Thu-Night" not in val:
             ThursdayN = ThursdayN + "Sahar "
-        if not "Sahar Sat-Night " in val:
+        if "Sahar Sat-Night " not in val:
             SaturdayN = SaturdayN + "Sahar "
-    if not "Yair All" in val:
-        if not "Yair Sun-Morning" in val:
+    if "Yair All" not in val:
+        if "Yair Sun-Morning" not in val:
             SundayM = SundayM + "Yair "
-        if not "Yair Mon-Morning" in val:
+        if "Yair Mon-Morning" not in val:
             MondayM = MondayM + "Yair "
-        if not "Yair Tue-Morning" in val:
+        if "Yair Tue-Morning" not in val:
             TuesdayM = TuesdayM + "Yair "
-        if not "Yair Wed-Morning" in val:
+        if "Yair Wed-Morning" not in val:
             WednesdayM = WednesdayM + "Yair "
-        if not "Yair Thu-Morning" in val:
+        if "Yair Thu-Morning" not in val:
             ThursdayM = ThursdayM + "Yair "
-        if not "Yair Fri-Morning " in val:
+        if "Yair Fri-Morning " not in val:
             FridayM = FridayM + "Yair "
-        if not "Yair Sun-Night" in val:
+        if "Yair Sun-Night" not in val:
             SundayN = SundayN + "Yair "
-        if not "Yair Mon-Night" in val:
+        if "Yair Mon-Night" not in val:
             MondayN = MondayN + "Yair "
-        if not "Yair Tue-Night" in val:
+        if "Yair Tue-Night" not in val:
             TuesdayN = TuesdayN + "Yair "
-        if not "Yair Wed-Night" in val:
+        if "Yair Wed-Night" not in val:
             WednesdayN = WednesdayN + "Yair "
-        if not "Yair Thu-Night" in val:
+        if "Yair Thu-Night" not in val:
             ThursdayN = ThursdayN + "Yair "
-        if not "Yair Sat-Night " in val:
+        if "Yair Sat-Night " not in val:
             SaturdayN = SaturdayN + "Yair "
     #trasform into List
     SundayM = SundayM.split(" ")
@@ -358,10 +356,9 @@ def button_callback2():
     global Sahar_fr
     get_data()
 
+
     fr = [Alyona_fr, Alex_fr, Ofir_fr, Almog_fr,  Yair_fr, Sahar_fr, Ran_fr]
     st = [Alyona_st, Alex_st, Ofir_st, Almog_st,  Yair_st, Sahar_st, Ran_st]
-    print(Alyona_st, Alex_st, Ofir_st, Almog_st,  Yair_st, Sahar_st, Ran_st)
-
     # after get from input which shifts each ops can not work, tRansform the data to format 'X = (can not work) ABC..'
     check()
     print("SundayM:", SundayM ,"\n",
@@ -376,49 +373,82 @@ def button_callback2():
           "ThursdayN:", ThursdayN ,"\n",
           "FridayM:", FridayM ,"\n",
           "SaturdayN:", SaturdayN) ,"\n"
+    print(max(fr))
+
     #sunday
     global newSat
+    global newFr
+
+    alyona = 0
+    alex = 0
+    ofir = 0
+    yair = 0
+    almog = 0
+    ran = 0
+    sahar = 0
+
+#SAT
     print("sat min", min(st))
     for i in range(0,3):
         if len(SaturdayN) >= 2:
-            if (Alyona_st == min(st) + i) and ("Alyona" in SaturdayN):
+            if (Alyona_st < min(st) + i) and ("Alyona" in SaturdayN):
                 NewSat = "Alyona "
-            elif (Ofir_st == min(st) + i) and ("Ofir" in SaturdayN):
+                break
+            elif (Ofir_st < min(st) + i) and ("Ofir" in SaturdayN):
                 NewSat = "Ofir "
-            elif (Yair_st == min(st) + i) and ("Yair" in SaturdayN):
+                break
+            elif (Yair_st < min(st) + i) and ("Yair" in SaturdayN):
                 NewSat = "Yair "
-            elif (Sahar_st == min(st) + i) and ("Sahar" in SaturdayN):
+                break
+            elif (Sahar_st < min(st) + i) and ("Sahar" in SaturdayN):
                 NewSat = "Sahar "
-            elif (Alex_st == min(st) + i) and ("Alex" in SaturdayN):
+                break
+            elif (Alex_st < min(st) + i) and ("Alex" in SaturdayN):
                 NewSat = "Alex "
-            elif (Ran_st == min(st) + i) and ("Ran" in SaturdayN):
+                break
+            elif (Ran_st < min(st) + i) and ("Ran" in SaturdayN):
                 NewSat = "Ran "
-            elif (Almog_st == min(st) + i) and ("Almog" in SaturdayN):
+                break
+            elif (Almog_st < min(st) + i) and ("Almog" in SaturdayN):
                 NewSat = "Almog "
+                break
+    for i in range(0, 3):
         if len(SaturdayN) >= 2:
-            if (Alyona_st == min(st) + i) and ("Alyona" in SaturdayN) and (not "Alyona" in NewSat):
+            if (Alyona_st < min(st) + i) and ("Alyona" in SaturdayN) and (not "Alyona" in NewSat):
                 NewSat = NewSat + "Alyona"
-            elif (Ofir_st == min(st) + i) and ("Ofir" in SaturdayN) and (not "Ofir" in NewSat):
+                break
+            elif (Ofir_st < min(st) + i) and ("Ofir" in SaturdayN) and (not "Ofir" in NewSat):
                 NewSat = NewSat + "Ofir"
-            elif (Yair_st == min(st) + i) and ("Yair" in SaturdayN) and (not "Yair" in NewSat):
+                break
+            elif (Yair_st < min(st) + i) and ("Yair" in SaturdayN) and (not "Yair" in NewSat):
                 NewSat = NewSat + "Yair"
-            elif (Sahar_st == min(st) + i) and ("Sahar" in SaturdayN) and (not "Sahar" in NewSat):
+                break
+            elif (Sahar_st < min(st) + i) and ("Sahar" in SaturdayN) and (not "Sahar" in NewSat):
                 NewSat = NewSat + "Sahar"
-            elif (Alex_st == min(st) + i) and ("Alex" in SaturdayN) and (not "Alex" in NewSat):
+                break
+            elif (Alex_st < min(st) + i) and ("Alex" in SaturdayN) and (not "Alex" in NewSat):
                 NewSat = NewSat + "Alex"
-            elif (Ran_st == min(st) + i) and ("Ran" in SaturdayN) and (not "Ran" in NewSat):
+                break
+            elif (Ran_st < min(st) + i) and ("Ran" in SaturdayN) and (not "Ran" in NewSat):
                 NewSat = NewSat + "Ran"
-            elif (Almog_st == min(st) + i) and ("Almog" in SaturdayN) and (not "Almog" in NewSat):
+                break
+            elif (Almog_st < min(st) + i) and ("Almog" in SaturdayN) and (not "Almog" in NewSat):
                 NewSat = NewSat + "Almog"
-    NewSat.split()
+                break
+    NewSat = NewSat.split(" ")
     print("NewSat: ", NewSat)
+    SaturdayN = [NewSat[0], NewSat[1]]
 
 
+
+#sunday Night and morning
     if len(SundayN) >= 3:
         SundayN = random.sample(SundayN, 3)
         if SundayN[0] in SundayM: SundayM.remove(SundayN[0])
         if SundayN[1] in SundayM: SundayM.remove(SundayN[1])
         if SundayN[2] in SundayM: SundayM.remove(SundayN[2])
+
+
 
         if SundayN[0] in MondayM: MondayM.remove(SundayN[0])
         if SundayN[1] in MondayM: MondayM.remove(SundayN[1])
@@ -432,6 +462,7 @@ def button_callback2():
     elif len(SundayN) == 1:
         if SundayN[0] in SundayM: SundayM.remove(SundayN[0])
         if SundayN[0] in MondayM: MondayM.remove(SundayN[0])
+
 
     if len(MondayN) >= 3:
         MondayN = random.sample(MondayN, 3)
@@ -452,6 +483,7 @@ def button_callback2():
         if MondayN[0] in TuesdayM: TuesdayM.remove(MondayN[0])
         if MondayN[0] in MondayM: MondayM.remove(MondayN[0])
 
+
     if len(TuesdayN) >= 3:
         TuesdayN = random.sample(TuesdayN, 3)
         if TuesdayN[0] in WednesdayM: WednesdayM.remove(TuesdayN[0])
@@ -471,6 +503,151 @@ def button_callback2():
         if TuesdayN[0] in WednesdayM: WednesdayM.remove(TuesdayN[0])
         if TuesdayN[0] in TuesdayM: TuesdayM.remove(TuesdayN[0])
 
+    if 'Alyona' in SaturdayN:
+        alyona = alyona + 1
+    if 'Alex' in SaturdayN:
+        alex = alex + 1
+    if 'Ofir' in SaturdayN:
+        ofir = ofir + 1
+    if 'Yair' in SaturdayN:
+        yair = yair + 1
+    if 'Almog' in SaturdayN:
+        almog = almog + 1
+    if 'Ran' in SaturdayN:
+        ran = ran + 1
+    if 'Sahar' in SaturdayN:
+        sahar = sahar + 1
+
+    if 'Alyona' in SundayM:
+        alyona = alyona + 1
+    if 'Alex' in SundayM:
+        alex = alex + 1
+    if 'Ofir' in SundayM:
+        ofir = ofir + 1
+    if 'Yair' in SundayM:
+        yair = yair + 1
+    if 'Almog' in SundayM:
+        almog = almog + 1
+    if 'Ran' in SundayM:
+        ran = ran + 1
+    if 'Sahar' in SundayM:
+        sahar = sahar + 1
+    if 'Alyona' in SundayN:
+        alyona = alyona + 1
+    if 'Alex' in SundayN:
+        alex = alex + 1
+    if 'Ofir' in SundayN:
+        ofir = ofir + 1
+    if 'Yair' in SundayN:
+        yair = yair + 1
+    if 'Almog' in SundayN:
+        almog = almog + 1
+    if 'Ran' in SundayN:
+        ran = ran + 1
+    if 'Sahar' in SundayN:
+        sahar = sahar + 1
+    if 'Alyona' in MondayM:
+        alyona = alyona + 1
+    if 'Alex' in MondayM:
+        alex = alex + 1
+    if 'Ofir' in MondayM:
+        ofir = ofir + 1
+    if 'Yair' in MondayM:
+        yair = yair + 1
+    if 'Almog' in MondayM:
+        almog = almog + 1
+    if 'Ran' in MondayM:
+        ran = ran + 1
+    if 'Sahar' in MondayM:
+        sahar = sahar + 1
+    if 'Alyona' in MondayN:
+        alyona = alyona + 1
+    if 'Alex' in MondayN:
+        alex = alex + 1
+    if 'Ofir' in MondayN:
+        ofir = ofir + 1
+    if 'Yair' in MondayN:
+        yair = yair + 1
+    if 'Almog' in MondayN:
+        almog = almog + 1
+    if 'Ran' in MondayN:
+        ran = ran + 1
+    if 'Sahar' in MondayN:
+        sahar = sahar + 1
+
+    if 'Alyona' in TuesdayM:
+        alyona = alyona + 1
+    if 'Alex' in TuesdayM:
+        alex = alex + 1
+    if 'Ofir' in TuesdayM:
+        ofir = ofir + 1
+    if 'Yair' in TuesdayM:
+        yair = yair + 1
+    if 'Almog' in TuesdayM:
+        almog = almog + 1
+    if 'Ran' in TuesdayM:
+        ran = ran + 1
+    if 'Sahar' in TuesdayM:
+        sahar = sahar + 1
+
+    if 'Alyona' in TuesdayN:
+        alyona = alyona + 1
+    if 'Alex' in TuesdayN:
+        alex = alex + 1
+    if 'Ofir' in TuesdayN:
+        ofir = ofir + 1
+    if 'Yair' in TuesdayN:
+        yair = yair + 1
+    if 'Almog' in TuesdayN:
+        almog = almog + 1
+    if 'Ran' in TuesdayN:
+        ran = ran + 1
+    if 'Sahar' in TuesdayN:
+        sahar = sahar + 1
+
+
+    print(alyona, alex, ofir, yair, almog, ran, sahar)
+
+    if len(WednesdayN) >= 3:
+
+        WednesdayN = random.sample(WednesdayN, 3)
+
+
+        if WednesdayN[0] in WednesdayM: WednesdayM.remove(WednesdayN[0])
+        if WednesdayN[1] in WednesdayM: WednesdayM.remove(WednesdayN[1])
+        if WednesdayN[2] in WednesdayM: WednesdayM.remove(WednesdayN[2])
+
+        if WednesdayN[0] in ThursdayM: ThursdayM.remove(WednesdayN[0])
+        if WednesdayN[1] in ThursdayM: ThursdayM.remove(WednesdayN[1])
+        if WednesdayN[2] in ThursdayM: ThursdayM.remove(WednesdayN[2])
+    elif len(WednesdayN) == 2:
+        if WednesdayN[0] in WednesdayM: WednesdayM.remove(WednesdayN[0])
+        if WednesdayN[1] in WednesdayM: WednesdayM.remove(WednesdayN[1])
+
+        if WednesdayN[0] in ThursdayM: ThursdayM.remove(WednesdayN[0])
+        if WednesdayN[1] in ThursdayM: ThursdayM.remove(WednesdayN[1])
+    elif len(WednesdayN) == 1:
+        if WednesdayN[0] in WednesdayM: WednesdayM.remove(WednesdayN[0])
+        if WednesdayN[0] in ThursdayM: ThursdayM.remove(WednesdayN[0])
+
+    if len(ThursdayN) >= 3:
+        ThursdayN = random.sample(ThursdayN, 3)
+        if ThursdayN[0] in FridayM: FridayM.remove(ThursdayN[0])
+        if ThursdayN[1] in FridayM: FridayM.remove(ThursdayN[1])
+        if ThursdayN[2] in FridayM: FridayM.remove(ThursdayN[2])
+
+        if ThursdayN[0] in ThursdayM: ThursdayM.remove(ThursdayN[0])
+        if ThursdayN[1] in ThursdayM: ThursdayM.remove(ThursdayN[1])
+        if ThursdayN[2] in ThursdayM: ThursdayM.remove(ThursdayN[2])
+    elif len(ThursdayN) == 2:
+        if ThursdayN[0] in FridayM: FridayM.remove(ThursdayN[0])
+        if ThursdayN[1] in FridayM: FridayM.remove(ThursdayN[1])
+
+        if ThursdayN[0] in ThursdayM: ThursdayM.remove(ThursdayN[0])
+        if ThursdayN[1] in ThursdayM: ThursdayM.remove(ThursdayN[1])
+    elif len(ThursdayN) == 1:
+        if ThursdayN[0] in FridayM: FridayM.remove(ThursdayN[0])
+        if ThursdayN[0] in ThursdayM: ThursdayM.remove(ThursdayN[0])
 
     print("New SundayM:", SundayM ,"\n",
           "New SundayN:", SundayN ,"\n",
@@ -2755,27 +2932,9 @@ def button_clear():
     global hello
     global maxst
     global maxfr
-    global A
-    global B
-    global C
-    global D
-    global E
-    global F
-    global G
-    global H
-    global I
-    global j
 
-    A = ""
-    B = ""
-    C = ""
-    D = ""
-    E = ""
-    F = ""
-    G = ""
-    H = ""
-    I = ""
-    J = ""
+
+
     val = ""
     Alyona = ""
     Alex = ""
@@ -2814,6 +2973,65 @@ def his():
     df = pd.DataFrame(data, columns=ex)
     append_df_to_excel('history.xlsx', df, sheet_name='his', index=True, startrow=0)
 
+# def get_data():
+#     global Alyona_st
+#     global Alex_st
+#     global Ofir_st
+#     global Yair_st
+#     global Almog_st
+#     global Ran_st
+#     global Sahar_st
+#     global Alyona_fr
+#     global Alex_fr
+#     global Ofir_fr
+#     global Yair_fr
+#     global Almog_fr
+#     global Ran_fr
+#     global Sahar_fr
+#     sheets_list = wb2.sheetnames
+#     print(sheets_list)
+#     # range (i, j) and if j < 30 delete first item
+#     for i in range(0, 100):
+#         if 0 <= i < len(sheets_list):
+#             df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
+#             st = (df['SaturDay'])
+#             fr = (df['FriDay'])
+#             print(df['SaturDay'])
+#             print(df['FriDay'])
+#
+#             if 'Alyona' in st.values:
+#                 Alyona_st = Alyona_st + 1
+#             if 'Alyona' in fr.values:
+#                 Alyona_fr = Alyona_fr + 1
+#             if 'Alex' in st.values:
+#                 Alex_st = Alex_st + 1
+#             if 'Alex' in fr.values:
+#                 Alex_fr = Alex_fr + 1
+#             if 'Ofir' in st.values:
+#                 Ofir_st = Ofir_st + 1
+#             if 'Ofir' in fr.values:
+#                 Ofir_fr = Ofir_fr + 1
+#             if 'Yair' in st.values:
+#                 Yair_st = Yair_st + 1
+#             if 'Yair' in fr.values:
+#                 Yair_fr = Yair_fr + 1
+#             if 'Almog' in st.values:
+#                 Almog_st = Almog_st + 1
+#             if 'Almog' in fr.values:
+#                 Almog_fr = Almog_fr + 1
+#             if 'Ran' in st.values:
+#                 Ran_st = Ran_st + 1
+#             if 'Ran' in fr.values:
+#                 Ran_fr = Ran_fr + 1
+#             if 'Sahar' in st.values:
+#                 Sahar_st = Sahar_st + 1
+#             if 'Sahar' in fr.values:
+#                 Sahar_fr = Sahar_fr + 1
+#
+#     print(Alyona_st, Alex_st, Ofir_st, Almog_st, Yair_st, Sahar_st, Ran_st)
+#     print(Alyona_fr, Alex_fr, Ofir_fr, Almog_fr, Yair_fr, Sahar_fr, Ran_fr)
+
+
 def get_data():
     global Alyona_st
     global Alex_st
@@ -2821,7 +3039,6 @@ def get_data():
     global Yair_st
     global Almog_st
     global Ran_st
-    # global Pavel_st
     global Sahar_st
     global Alyona_fr
     global Alex_fr
@@ -2829,47 +3046,45 @@ def get_data():
     global Yair_fr
     global Almog_fr
     global Ran_fr
-    # global Pavel_fr
     global Sahar_fr
     sheets_list = wb2.sheetnames
-    # range (i, j) and if j < 30 delete first item
-    for i in range(0, 100):
-        if 0 <= i < len(sheets_list):
-            df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
-            st = (df['SaturDay'])
-            fr = (df['FriDay'])
-            if 'Alyona' in st.values:
-                Alyona_st = Alyona_st + 1
-            if 'Alyona' in fr.values:
-                Alyona_fr = Alyona_fr + 1
-            if 'Alex' in st.values:
-                Alex_st = Alex_st + 1
-            if 'Alex' in fr.values:
-                Alex_fr = Alex_fr + 1
-            if 'Ofir' in st.values:
-                Ofir_st = Ofir_st + 1
-            if 'Ofir' in fr.values:
-                Ofir_fr = Ofir_fr + 1
-            if 'Yair' in st.values:
-                Yair_st = Yair_st + 1
-            if 'Yair' in fr.values:
-                Yair_fr = Yair_fr + 1
-            if 'Almog' in st.values:
-                Almog_st = Almog_st + 1
-            if 'Almog' in fr.values:
-                Almog_fr = Almog_fr + 1
-            if 'Ran' in st.values:
-                Ran_st = Ran_st + 1
-            if 'Ran' in fr.values:
-                Ran_fr = Ran_fr + 1
-            if 'Sahar' in st.values:
-                Sahar_st = Sahar_st + 1
-            if 'Sahar' in fr.values:
-                Sahar_fr = Sahar_fr + 1
-            # if 'Pavel' in st.values:
-            #     Pavel_st = Pavel_st + 1
-            # if 'Pavel' in fr.values:
-            #     Pavel_fr = Pavel_fr + 1
+    for i in range(0, len(sheets_list)):
+        print("len" , len(sheets_list))
+        df = pd.read_excel('history.xlsx', sheet_name=sheets_list[i])
+        st = (df['SaturDay']).to_numpy()
+        fr = (df['FriDay']).to_numpy()
+        if 'Alyona' in st:
+            Alyona_st = Alyona_st + 1
+        if 'Alyona' in fr:
+            Alyona_fr = Alyona_fr + 1
+        if 'Alex' in st:
+            Alex_st = Alex_st + 1
+        if 'Alex' in fr:
+            Alex_fr = Alex_fr + 1
+        if 'Ofir' in st:
+            Ofir_st = Ofir_st + 1
+        if 'Ofir' in fr:
+            Ofir_fr = Ofir_fr + 1
+        if 'Yair' in st:
+            Yair_st = Yair_st + 1
+        if 'Yair' in fr:
+            Yair_fr = Yair_fr + 1
+        if 'Almog' in st:
+            Almog_st = Almog_st + 1
+        if 'Almog' in fr:
+            Almog_fr = Almog_fr + 1
+        if 'Ran' in st:
+            Ran_st = Ran_st + 1
+        if 'Ran' in fr:
+            Ran_fr = Ran_fr + 1
+        if 'Sahar' in st:
+            Sahar_st = Sahar_st + 1
+        if 'Sahar' in fr:
+            Sahar_fr = Sahar_fr + 1
+        print("st", st)
+        print(Alyona_st, Alex_st, Ofir_st, Yair_st, Almog_st, Ran_st, Sahar_st)
+
+
 
 def ai():
     print("aba")
@@ -3579,13 +3794,13 @@ switch_2 = customtkinter.CTkSwitch(master=frame_1,text="Sun-Night", command=bloc
 switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Morning", command=block, variable=switchvar3,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 0,pady=8, padx=8)
 
-switch_3 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Night", command=block, variable=switchvar4,
+switch_4 = customtkinter.CTkSwitch(master=frame_1,text="Mon-Night", command=block, variable=switchvar4,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 4, column = 1,pady=8, padx=8)
 
-switch_4 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Morning", command=block, variable=switchvar5,
+switch_5 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Morning", command=block, variable=switchvar5,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 0,pady=8, padx=8)
 
-switch_8 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Night", command=block, variable=switchvar6,
+switch_6 = customtkinter.CTkSwitch(master=frame_1,text="Tue-Night", command=block, variable=switchvar6,
                                                  onvalue=1, offvalue=0).grid(sticky = W,row = 5, column = 1,pady=8, padx=8)
 
 switch_7 = customtkinter.CTkSwitch(master=frame_1,text="Wed-Morning", command=block, variable=switchvar7,
